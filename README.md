@@ -5,7 +5,8 @@ Käesolev projekt on loodud Tallinna Ülikooli Haapsalu kolledži tudengite pool
 Projekti eesmärgiks on luua arvutimäng **MathRynt**. 
 
 Projekti liikmed:
-| --- | --- |
+| Roll | Nimi |
+| ------- | ------- |
 | Arendaja/projektijuht | Riina |
 | Arendaja | Andrus | 
 | Disainer | Siiri | 

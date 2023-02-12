@@ -5,10 +5,12 @@ Käesolev projekt on loodud Tallinna Ülikooli Haapsalu kolledži tudengite pool
 Projekti eesmärgiks on luua arvutimäng **MathRynt**. 
 
 Projekti liikmed:
-- Riina Muld
-- Siiri Inno
-- Mario Murd
-- Andrus Küünarpuu
+| --- | --- |
+| Arendaja/projektijuht | Riina |
+| Arendaja | Andrus | 
+| Disainer | Siiri | 
+| Disainer | Mario |
+
  
 ## Mängu MathRynt kirjeldus
 Mängu **MathRynt** käigus peab mängija liikuma labürindis ning edasi pääsemiseks tuleb mängijal lahendada matemaatkaülesandeid. Sõltuvalt sellest kas vastus on õige või vale, avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. Mängija tasemest sõltub, millise viimase ukseni ta jõuab. Ukse kohale on kirjutatud tema tiitel.

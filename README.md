@@ -20,6 +20,20 @@ Mängu **MathRynt** käigus peab mängija liikuma labürindis ning edasi pääse
 ### Mängumootor
 Mängumootor on hetkel valimata. Esialgu tutvuvad projekti liikmed erinevate mängumootoritega - seejärel valitakse mängu loomiseks sobivaim.
 
+## Koosolekud
+Grupi koosolekute [memod](https://docs.google.com/document/d/1ctL368E41VLaUA2ccaPa9NP3P005Hh6WGgJ_8lBTxd0/edit#)
+Koosolekute lühiülevaade:
+<ul>
+  <li>18.02 koosolek - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine)
+  OTSUS: 
+  - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00 
+  - Kasutame mängumootorina Unityt
+  - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 
+  - Järgmine koosolek 05.märts kell 10:00
+  </li>
+</ul>
+
+
 ## Mängu valmimine
 Mängu loomist alustati 10. veebruaril 2023 ning valmimise tähtajaks on 24. mai 2023. 
 

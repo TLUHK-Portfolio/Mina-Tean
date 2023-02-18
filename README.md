@@ -24,12 +24,12 @@ Mängumootor on hetkel valimata. Esialgu tutvuvad projekti liikmed erinevate mä
 Grupi koosolekute [memod](https://docs.google.com/document/d/1ctL368E41VLaUA2ccaPa9NP3P005Hh6WGgJ_8lBTxd0/edit#)
 Koosolekute lühiülevaade:
 <ul>
-  <li>18.02 koosolek - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine)
-  OTSUS: 
-  - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00 
-  - Kasutame mängumootorina Unityt
-  - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 
-  - Järgmine koosolek 05.märts kell 10:00
+  <li>18.02 koosolek - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>
+  OTSUS:<br> 
+  - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00<br> 
+  - Kasutame mängumootorina Unityt<br>
+  - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 <br>
+  - Järgmine koosolek 05.märts kell 10:00<br>
   </li>
 </ul>
 

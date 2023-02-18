@@ -21,7 +21,7 @@ Mängu **MathRynt** käigus peab mängija liikuma labürindis ning edasi pääse
 Mängumootor on hetkel valimata. Esialgu tutvuvad projekti liikmed erinevate mängumootoritega - seejärel valitakse mängu loomiseks sobivaim.
 
 ## Koosolekud
-Grupi koosolekute [memod](https://docs.google.com/document/d/1ctL368E41VLaUA2ccaPa9NP3P005Hh6WGgJ_8lBTxd0/edit#)
+Grupi koosolekute [memod](https://docs.google.com/document/d/1ctL368E41VLaUA2ccaPa9NP3P005Hh6WGgJ_8lBTxd0/edit#)<br>
 Koosolekute lühiülevaade:
 <ul>
   <li>18.02 koosolek - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>

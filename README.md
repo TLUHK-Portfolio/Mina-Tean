@@ -37,7 +37,20 @@ Koosolekute lühiülevaade:
   - Järgmine koosolek 05.märts kell 10:00<br>
   </li>
 </ul>
-
+<ul>
+  <li>
+   23.02.2023 <br>
+   11.30 - 12.45 <br>
+   Koosoleku teemad:<br>
+   - Projekti todo list ülevaatus. <br>
+   - Uute ülesannete jagamine. <br>
+   - Mängijale mängu käigu edukuse kohta tagasiside andmine. <br>
+   - Mängu käigu detailsem arutlus. <br>
+   - Mängus esinevate küsimuste temaatika arutlus:<br>
+    Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks
+   - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
+  </li>
+</ul>
 
 ## Mängu valmimine
 Mängu loomist alustati 10. veebruaril 2023 ning valmimise tähtajaks on 24. mai 2023. 

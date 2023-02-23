@@ -47,7 +47,7 @@ Koosolekute lühiülevaade:
    - Mängijale mängu käigu edukuse kohta tagasiside andmine. <br>
    - Mängu käigu detailsem arutlus. <br>
    - Mängus esinevate küsimuste temaatika arutlus:<br>
-    Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks
+    Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks <br>
    - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
   </li>
 </ul>

@@ -13,20 +13,20 @@ Projekti liikmed:
 | Disainer | Mario |
 
 ## Tegevuskava
-Projekti etappide kirjeldamiseks valmis üldine ülevaade [tegevuskavas](https://docs.google.com/document/d/1aKCeKJgGJDovNX4XCT2Fnrd2xL7VZm_0MKClrE0lqRE/edit#heading=h.g9yr8l7y5si).
+Projekti etappide kirjeldamiseks valmis üldine ülevaade [tegevuskavas](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Tegevuskava.md).
  
 ## Mängu MathRynt kirjeldus
 Mängu **MathRynt** käigus peab mängija liikuma labürindis ning edasi pääsemiseks tuleb mängijal lahendada matemaatkaülesandeid. Sõltuvalt sellest kas vastus on õige või vale, avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. Mängija tasemest sõltub, millise viimase ukseni ta jõuab. Ukse kohale on kirjutatud tema tiitel.
 
 ## Kasutatavad tehnoloogiad
 ### Mängumootor
-Mängumootorite võrdlemiseks valmis [tabel](https://docs.google.com/document/d/1Ispma1xoDTJItqTiffIiG-rbAPmWV7TYIVb-WwNN3Z0/edit#heading=h.63a302jhyac) ning detailsemaks uurimiseks [analüüs](https://docs.google.com/document/d/1fiQQhowl1wkMfbyDUok-l4GdgZ5aJ5vpeC6Jn6uW5aY/edit). Hetkel on valikus kaks mängumootorit - Unity ja Godot.
+[Mängumootorite võrdlemiseks](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Mangumootorid.md) valmis tabel ning detailsemaks uurimiseks analüüs. Hetkel on valikus kaks mängumootorit - Unity ja Godot.
 
 ## Disain
-Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://docs.google.com/document/d/1jlol9iGC2-ZezVf_gtgyFAC5oOnSPvZV/edit#heading=h.gjdgxs)
+Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/DisainiPlaan.md)
 
 ## Koosolekud
-Grupi koosolekute [memod](https://docs.google.com/document/d/1ctL368E41VLaUA2ccaPa9NP3P005Hh6WGgJ_8lBTxd0/edit#)<br>
+Grupi koosolekute [memod](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md)<br>
 Koosolekute lühiülevaade:
 <ul>
   <li>18.02 koosolek - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>

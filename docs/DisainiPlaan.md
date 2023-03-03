@@ -3,10 +3,10 @@
 ## Mängu disain
 
 ### Ülevaade
-<p>Tegemist on 3D disainiga arvutimänguga algklassi lastele, mis arendab laste arvutamisoskust läbi mängu. Mängu saab mängida üksinda.</p>
+<p>Tegemist on 2D disainiga arvutimänguga algklassi lastele, mis arendab laste arvutamisoskust läbi mängu. Mängu saab mängida üksinda.</p>
 
 ### Mängu kirjeldus
-<p>Mängija peab sisenema labürindi maja esimese taseme uksest, sisenedes uksest näeb järgmises ruumis tahvlil matemaatika ülesannet, valib ülesande vastuse 3 valikvastuse seast. Sõltuvalt vastusest avaneb üks kolmest uksest, kuhu mängija edasi liigub. Järgmistes  Labürindi läbimiseks peab lahendama 10 ülesannet, peale ülesannete lahendamist saab mängija teada oma teadmiste taseme 5 taseme ulatuses: nt: pead veel harjutama; hea tulemus, aga võiksid veel õppida; hea tulemus; sul läks hästi; suurepärane tulemus (võib ka vähem valikuid teha).
+<p>Mängija peab sisenema labürindi maja esimese taseme uksest, sisenedes uksest näeb järgmises ruumis tahvlil ülesannet, valib ülesande vastuse 3 valikvastuse seast. Sõltuvalt vastusest avaneb üks kolmest uksest, kuhu mängija edasi liigub. Ülesande läbimiseks peab lahendama 10 ülesannet, peale ülesannete lahendamist saab mängija teada oma teadmiste taseme.
 Kui mängija vastab kõik ülesanded õigesti, siis saab järgmisele tasemele (järgmisse klassi). Kui vastab valesti, saab sama taseme ülesandeid uuesti otsast peale alustada niikaua, kui lõpuks kõik vastused õiged on. Iga kord peab sisenema labürindi uksest, mis on mängija jaoks avatud (alati võib ka madalama taseme uksest siseneda ja ülesandeid korrata). Juhul, kui madalama taseme ülesanded pole õigesti lahendatud, siis on järgmise taseme (klassi) uksed lukus.
 </p>
 

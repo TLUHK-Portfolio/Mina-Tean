@@ -42,7 +42,7 @@ Mida tegin, kas oli probleeme?
 ### Kokkulepped ja otsused
 
 <ol>
-  <li>Igaühel on [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues/) täidetud 21.veebruar kell 19:00</li>
+  <li>Igaühel on oma [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues/) täidetud 21.veebruar kell 19:00</li>
   <li>Kasutame mängumootorina Unityt või Godot</li>
   <li>Järgmine koosolek 05.märts kell 10:00</li>
 </ol>

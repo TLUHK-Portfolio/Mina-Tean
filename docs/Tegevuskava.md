@@ -12,7 +12,7 @@ Lõpp: 06.06.2023
   <li>dokumenteerimine;</li>
 </ul>
 
-TODO: 
+Suunised juhendajatelt: 
 
  <ol>
   <li>Tegevuskava - mida, millal, kuidas. Roadmap.</li>
@@ -28,12 +28,24 @@ TODO:
 
 
 ## Release 2 (23.02-09.03) - eeltöö, disain
+
 <ul>
+  <li>dokumentatsiooni üleviimine Githubi</li>
+  <li>mängu küsimuste koostamine</li>
+  <li>mänguvoo koomiks/joonistus prototüübi jaoks</li>
+  <li>Blenderis uste loomine</li>
+  <li>paberprototüübi loomine ja testimine</li>
+  <li>prototüübist video filmimine</li>
+  <li>mängu disaini dokumendi muutmine</li>
+</ul>
+
+Suunised juhendajatelt:
+<ol>
   <li>Paberprototüüp, testimine;</li>
   <li>graafika esimeste kavandite esitlemine, mis määratlevad mängu visuaalse stiili;</li>
   <li>esimeste mängumootoris sooritatud katsetuste esitamine;</li>
-  <li>esitlus.</li>
-</ul>
+  <li>esitlus</li>
+</ol>
 
 ## Release 3 (10.03-23.03) - disain, arendamine
 

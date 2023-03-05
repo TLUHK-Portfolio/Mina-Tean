@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://x3tavmxip6tp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+offset_left = 412.0
+offset_top = 230.0
+offset_right = 677.0
+offset_bottom = 320.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 63
+text = "Katsetus"
+horizontal_alignment = 1
+vertical_alignment = 1

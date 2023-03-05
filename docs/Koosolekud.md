@@ -86,3 +86,82 @@ Lõpp: 12:45
     <li>OTSUS: Teeme esialgse prototüübi (koomiksi stiilis)</li>
     <li>OTSUS: Proovime läbi Unity ja Godot võimalused 3D elementidega.</li>
 </ol>
+
+## 05.03.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:30
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+<ol>
+  <li>Siiri Inno
+  <p>prototüübi koostamine (kuidas tulemusi kajastada) ja testimine; video proto ohta; disaini dok ümberkirjutamine;</p>
+  </li>
+  <li>Mario Murd
+  <p>koomiks; koomiksi elemendid inspiratsioonitahvlile; Blenderis uksed;</p>
+  </li>
+  <li>Andrus Küünarpu
+  <p>Godot uurimine; Unity juhendite lugemine; Godot’s mängu katsetamine; keeruline ja ajamahukas leida vajalikke asju üles Godot’s (pole kogemust); prototüübi kavand (koomiks);</p>
+  </li>
+  <li>Riina Muld
+  <p>dokumentatsiooni kirjutamine Githubi (Koosolekud.md failis lingid kuvavad kehvasti); Kanbanile uute tööülesannete kirjeldamine; mängu küsimuste loomine; prototüübi kavandi idee; Godot mängu loomise katsetamine;</p>
+  </li>
+</ol>
+
+### Kokkulepped ja otsused
+
+<ol>
+  <li>Tegevuskava - meil on kohe seitsmest arendustsüklist kaks läbitud ja järgi on jäänud viis tsüklit, mille jooksul peame mängu ja dokumentatsiooni valmis saama.</li>
+  <li>Mängumootor ja disaini loomine
+    <p><strong>Riskid:</strong></p>
+    <p>1.1 animeerimine keeruline</p>
+    <p>1.2 ebaühtlane disain (stiilid erinevad, proportsioonid)</p>
+    <p>1.3 võibolla ei saa mängumootoriga hakkama ja peab JS kasutama</p>
+    <p>1.4 disaini teostamine keeruline</p>
+
+      ``` 
+    
+  |    | 1.1 | 1.2 | 1.3 | 1.4 |
+  | --------------- | ------------------ |----------- | ----------- | ----------- | 
+  | tõenäosus, et risk realiseerub (skaala: väike 1-5 suur)   |4 |4 |2  |4 |
+  | kahju suurus, kui risk realiseerub  |mäng ei saa valmis |mäng on kole, aga saame tehtud | oleneb, millal otsustame, et peame mängumootorist loobuma |disaini ei saa teostada, alternatiivi puudumisel mäng ei tööta nii nagu planeeritud; Ajakulu muudatuste tegemistel | 
+  | riski maandamise meetmed  |peame valima võimalikult lihtsad lahendused |moodboardi täpsemaks ja värvigamma otsustada |teeme JavaScript mängu  |lihtsustame disaini;liiga palju disaine ette valmis ei tee | 
+    
+  </li>
+  
+  <li>Valik - 2D või 3D
+    
+    ``` 
+  |punktid: min 1 - max 3     | 2D | 3D |
+  | -   | ------------------ |----------- | 
+  | kiirus (see tähendab nii seda kui kiiresti suudame teostada, kui seda et mäng oleks võimalikult kiire)   |(3+3+3+2) = 11 |  (1+2+2+3) = 8 | 
+  | kompetentsi olemasolu grupis  |(2 + 2 + 2 +1) = 7  |(1 + 2 + 1 +1) = 5  | 
+  | lihtsus (eelistatuim kõige lihtsam lahendus)(1-3)  |(1 + 2 + 2 + 1) = 6  | (1 + 1 + 1 + 1) = 4  | 
+  | KOKKU  | 24 | 17  | 
+    
+  </li>
+  <p><strong>OTSUS: teeme 2D mängu</strong></p>
+</ol>
+
+### Tegevused edasiseks
+
+|     | Tegevuse kirjeldus |Vastutaja      | Tähtaeg |
+| -   | ------------------ |----------- | ----------- |
+| 1   |[Praktikapäeviku](https://github.com/tluhk/Multimeediumi_praktika/issues/) täitmine |KÕIK   | 08.03 kell 19:00 |
+| 2   |Järgmine koosolek        |KÕIK   | 18.03 kell 10:00 (plaan B: 21.03 kell 18:00)  |
+| 3   | Githubi lisada mängu test demo | Andrus  | 08.03  |
+| 4   | Moodboardi ülevaatamine ja täiendamine. Kontrollida, kuhu viib moodboardi link Githubis, vajadusel uuendada  | Mario  |08.03  |
+| 5   | Githubi docs/design (images, sound) kausta loomine  | Riina  |05.03  |
+| 6   | Disaini dokumendi uuendamine Githubis | Siiri  |08.03  |
+
+<br>

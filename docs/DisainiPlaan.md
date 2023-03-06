@@ -3,11 +3,11 @@
 ## Mängu disain
 
 ### Ülevaade
-<p>Tegemist on 2D disainiga arvutimänguga algklassi lastele, mis arendab laste arvutamisoskust läbi mängu. Mängu saab mängida üksinda.</p>
+<p>Tegemist on 2D disainiga arvutimänguga algklassi lastele, mis arendab laste arvutamisoskust, eesti keele oskust ja loodusõpetuse teadmisi läbi mängu. Mängu saab mängida üksinda.</p>
 
 ### Mängu kirjeldus
-<p>Mängija peab sisenema labürindi maja esimese taseme uksest, sisenedes uksest näeb järgmises ruumis tahvlil ülesannet, valib ülesande vastuse 3 valikvastuse seast. Sõltuvalt vastusest avaneb üks kolmest uksest, kuhu mängija edasi liigub. Ülesande läbimiseks peab lahendama 10 ülesannet, peale ülesannete lahendamist saab mängija teada oma teadmiste taseme.
-Kui mängija vastab kõik ülesanded õigesti, siis saab järgmisele tasemele (järgmisse klassi). Kui vastab valesti, saab sama taseme ülesandeid uuesti otsast peale alustada niikaua, kui lõpuks kõik vastused õiged on. Iga kord peab sisenema labürindi uksest, mis on mängija jaoks avatud (alati võib ka madalama taseme uksest siseneda ja ülesandeid korrata). Juhul, kui madalama taseme ülesanded pole õigesti lahendatud, siis on järgmise taseme (klassi) uksed lukus.
+<p>Mängija peab valima oma mängu tasemega ukse (1. klass, 2.klass jne), peale taseme valimist siseneb vastava taseme klassiruumi, sisenedes näeb tahvlil ülesannet, valib ülesande vastuse 3 valikvastuse seast, vastused on nähtavad ustel. Mängija liigub selle ukse juurde, kus arvab olevat õige vastuse. Juhul, kui vastus on õige, läheb uks roheliseks ja avaneb ning mängija liigub järgmisse ruumi. Juhul, kui vastus on vale, siis läheb uks punaseks ja ei avane. Mängija valib vastuseid niikaua, kuini leiab õige vastuse ja avaneb roheline uks. Ühe mängu läbimiseks peab lahendama 10 ülesannet, peale ülesannete lahendamist saab mängija teada oma teadmiste taseme ja valdkonna, kus ta teadmised on kõige paremad.
+Kui mängijal oli valesid vastuseid, peab ta sama taseme mängu kordama niikaual, kui kõik vastused on õiged.Kui mängija vastab kõik ülesanded õigesti, siis saab ta liikuda järgmisele tasemele (järgmisse klassi). 
 </p>
 
 <p>TODO!! Siia võib kiiruse eest punkte lisada, münte teenida vms.
@@ -49,22 +49,23 @@ Kui mängija vastab kõik ülesanded õigesti, siis saab järgmisele tasemele (j
 ### Tasemed
 
 #### Esimene tase
-<p>Mängija saab liita ja lahutada kümne piires.</p>
+<p>Mängija saab vastata esimese klassi taseme ülesannetele.</p>
 
 #### Teine tase
-<p>Mängija saab liita, lahutada, korrutada ja jagada kahekümne piires.</p>
+<p>Mängija saab vastata teise klassi taseme ülesannetele.</p>
 
 #### Kolmas tase
-<p>...</p>
+<p>Mängija saab vastata kolmanda klassi taseme ülesannetele.</p>
 
 ### Mängu käik
 
 <ol>
     <li>Mängija valib ukse ehk taseme.</li>
-    <li>Seejärel liigub uksest sisse ja lahendab ülesande. Ülesande vastuse valib 3 valikvastuse seast.</li>
-    <li>Seejärel avaneb üks ustest, kuhu mängija saab edasi liikuda.</li>
-    <li>Niimoodi saab lahendada 10 ülesannet järjest.</li>
-    <li>Peale ülesannete lahendamist saab mängija teada, kui palju arvutusoskust tal on ja kas soovitatakse mäng veel läbi teha, kui tulemused polnud suurepärased.</li>
+    <li>Seejärel liigub mängija uksest sisse ja lahendab ülesande. Ülesande valikvastused kuvatakse ustel, mängija valib õige vastuse liikudes ukse juurde.</li>
+    <li>Juhul, kui vastus on õige, siis läheb uks roheliseks ning avaneb, mängija saab edasi liikuda järgmisse ruumi järgmise ülesande juurde.
+    <li>Juhul, kui vastus on vale, siis läheb uks punaseks ning ei avane, mängija peab valima vastuseid niikaua, kuni saab õige vastuse ja siis edasi liikudajärgmise ülesande juurde. </li>
+    <li>Nii peab lahendama 10 ülesannet järjest.</li>
+    <li>Peale ülesannete lahendamist saab mängija teada oma teadmiste taseme ning valdkonna, kus tema teadmised on kõige paremad. Mängija peab vastava taseme mängu niikaua läbi tegema, kui kõik vastused on õiged.</li>
     <li>Ülesannete kordamiseks liigub mängija uuesti 1. taseme ukse juurde ja alustab mängimist.</li>
     <li>Peale kõikide ülesannete õigesti lahendamist saab mängija liikuda uuele tasemele.</li>
     <li>Mängija saab kiiresti lahendatud ülesannete eest boonuspunkte (10 ülesande kohta 30 sekundi jooksul 5 punkti jne). Boonuspunkte ei liideta, neid saab võrrelda eelmiste sooritustega.</li>
@@ -87,7 +88,7 @@ Kui mängija vastab kõik ülesanded õigesti, siis saab järgmisele tasemele (j
 ## Heli
 
 ### Stiil
-<p>Mängus kõlab mängimise ajal …..muusika, on mõned heliefektid, mis tekivad siis, kui mängija on saanud ülesande lahenduse vastuse - erinevate tulemuste korral kõlavad erinevad heliefektid. Taseme edukal läbimisel kõlab lõbus muusika. </p>
+<p>Mängus kõlab mängimise ajal muusika, on mõned heliefektid, mis tekivad siis, kui mängija on saanud ülesande lahenduse vastuse - erinevate tulemuste korral kõlavad erinevad heliefektid, lisaks on sammude heli. Taseme edukal läbimisel kõlab lõbus muusika. </p>
 
 ### Vajalikud heliefektid
 <ol>
@@ -100,5 +101,6 @@ Kui mängija vastab kõik ülesanded õigesti, siis saab järgmisele tasemele (j
     <li>Uste avamine</li>
     <li>Ülesande valikvastusele vajutamine</li>
     <li>Ülesannete lahendamise ajal mängiv muusika</li>
+    <li>Liikumise sammud</li>
 </ol>
 <p></p>

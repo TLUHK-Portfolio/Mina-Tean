@@ -11,10 +11,5 @@ func _process(delta):
 	pass
 
 
-func _on_exit_pressed():
-	Transition.smooth_quit()
-
-
-func _on_level1_pressed():
-	# get_tree().change_scene_to_file("res://level1.tscn")
-	Transition.change_scene("res://level1.tscn")
+func _on_button_pressed():
+	Transition.change_scene("res://main.tscn")

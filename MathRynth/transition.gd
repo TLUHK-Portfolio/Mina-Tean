@@ -10,4 +10,8 @@ func smooth_quit():
 	$AnimationPlayer.play("dissolve")
 	await $AnimationPlayer.animation_finished
 	get_tree().quit()
+
+func smooth_start():
+	$AnimationPlayer.play_backwards("dissolve")
+	await $AnimationPlayer.animation_finished
 	

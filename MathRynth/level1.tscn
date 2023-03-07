@@ -1,19 +1,58 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1dsxxlp1xrro"]
+[gd_scene load_steps=7 format=3 uid="uid://d1dsxxlp1xrro"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_1w7c5"]
+[ext_resource type="Texture2D" uid="uid://do7vemkqj8op3" path="res://img/door.png" id="2_54582"]
+[ext_resource type="Texture2D" uid="uid://bkfa5g8id5svt" path="res://img/frame.png" id="3_6u0rj"]
+
+[sub_resource type="Animation" id="Animation_bnatq"]
+resource_name = "DoorOpen"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door/DoorOpening/Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.4, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yh3s8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door/DoorOpening/Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sq72d"]
+_data = {
+"DoorOpen": SubResource("Animation_bnatq"),
+"RESET": SubResource("Animation_yh3s8")
+}
 
 [node name="level1" type="Node2D"]
 script = ExtResource("1_1w7c5")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 437.0
-offset_top = 279.0
-offset_right = 582.0
-offset_bottom = 349.0
+offset_left = 412.0
+offset_top = 30.0
+offset_right = 557.0
+offset_bottom = 100.0
 theme_override_font_sizes/font_size = 48
 text = "Tase 1"
 
-[node name="Button" type="Button" parent="."]
+[node name="MainMenu" type="Button" parent="."]
 offset_left = 871.0
 offset_top = 432.0
 offset_right = 953.0
@@ -21,4 +60,29 @@ offset_bottom = 474.0
 theme_override_font_sizes/font_size = 24
 text = "Peamenüü"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Door" type="Node2D" parent="."]
+
+[node name="DoorOpening" type="AnimationPlayer" parent="Door"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_sq72d")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="Door/DoorOpening"]
+position = Vector2(300, 350)
+texture = ExtResource("2_54582")
+offset = Vector2(-84, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Door"]
+position = Vector2(300, 350)
+texture = ExtResource("3_6u0rj")
+offset = Vector2(-84, 0)
+
+[node name="OpenDoor" type="Button" parent="Door"]
+offset_left = 130.0
+offset_top = 167.0
+offset_right = 303.0
+offset_bottom = 535.0
+
+[connection signal="pressed" from="MainMenu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Door/OpenDoor" to="." method="_on_open_door_pressed"]

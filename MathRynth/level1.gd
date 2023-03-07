@@ -13,3 +13,9 @@ func _process(delta):
 
 func _on_button_pressed():
 	Transition.change_scene("res://main.tscn")
+
+
+func _on_open_door_pressed():
+	$Door/DoorOpening.play("DoorOpen")
+	await $Door/DoorOpening.animation_finished
+	Transition.change_scene("res://level1.tscn")

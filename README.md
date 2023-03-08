@@ -16,7 +16,7 @@ Projekti liikmed:
 Projekti etappide kirjeldamiseks valmis üldine ülevaade [tegevuskavas](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Tegevuskava.md).
  
 ## Mängu MathRynt kirjeldus
-Mängu **MathRynt** käigus peab mängija liikuma labürindis ning edasi pääsemiseks tuleb mängijal lahendada matemaatkaülesandeid. Sõltuvalt sellest kas vastus on õige või vale, avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. Mängija tasemest sõltub, millise viimase ukseni ta jõuab. Ukse kohale on kirjutatud tema tiitel.
+Mängu **MathRynt** käigus peab mängija liikuma ruumides ning edasi pääsemiseks tuleb mängijal lahendada ülesandeid. Sõltuvalt sellest kas vastus on õige või vale, avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
 
 ## Kasutatavad tehnoloogiad
 ### Mängumootor

@@ -48,13 +48,43 @@ Suunised juhendajatelt:
 </ol>
 
 ## Release 3 (10.03-23.03) - disain, arendamine
+<ol>
+  <li>Prototüüpide esitlemine;</li>
+  <li>ülevaade mängu struktuurist;</li>
+  <li>arengute tutvustamine juhendajatele;</li>
+  <li>esitlus</li>
+</ol>
 
 ## Release 4 (24.03-13.04) - arendamine, (disain)
+<ol>
+  <li>Kasutajaliidese mock-up’i esitlemine;</li>
+  <li>täpne ülevaade vaadetest,kontrolleritest, nuppudest, menüüdest jms lisaelementidest;</li>
+  <li>töö meeskondades, edasiarengute tutvustamine juhendajatele</li>
+</ol>
 
 ## Release 5 (14.04-26.04) - arendamine, (disain)
+<ol>
+  <li>Viimistletud graafika tulemuste esitlemine;</li>
+  <li>töö meeskondades;</li>
+  <li>edasiarengute tutvustamine juhendajatele.</li>
+</ol>
 
 ## Release 6 (27.04-11.05) - testimine?, arendamine, (disain)
+<ol>
+  <li>Mäng on testimiskõlbulikus valmimisjärgus;</li>
+  <li>Töö meeskondades.</li>
+</ol>
 
 ## Release 7 (12.05-24.05) - testimine, arendamine
+<ol>
+  <li>Meeskondades töö testimise ja vigade parandamise osas;</li>
+  <li>Aruande vormistamine ja vajadusel juhendaja soovitatud paranduste teostamine;</li>
+  <li></li>
+</ol>
 
 ## Aruande esitamine (06.06)
+<ol>
+  <li>Praktika kaitsmine;</li>
+  <li>komisjonile valminud grupitööde esitlemine;</li>
+  <li>tagasiside ja hindamine.</li>
+</ol>

@@ -1,21 +1,23 @@
 extends Node2D
 
 func _init():
-	Transition.smooth_start()
+    Transition.smooth_start()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+    Questions.read_questions()
+    # get_node("Label").set("text", Questions.topic)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+# func _process(delta):
+#    pass
 
 
 func _on_exit_pressed():
-	Transition.smooth_quit()
+    Transition.smooth_quit()
 
 
 func _on_level1_pressed():
-	# get_tree().change_scene_to_file("res://level1.tscn")
-	Transition.change_scene("res://level1.tscn")
+    # get_tree().change_scene_to_file("res://level1.tscn")
+    Transition.change_scene("res://level1.tscn")

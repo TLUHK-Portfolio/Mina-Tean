@@ -1,88 +1,200 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1dsxxlp1xrro"]
+[gd_scene load_steps=27 format=3 uid="uid://b8fdcu6lj2rbj"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_1w7c5"]
-[ext_resource type="Texture2D" uid="uid://do7vemkqj8op3" path="res://img/door.png" id="2_54582"]
-[ext_resource type="Texture2D" uid="uid://bkfa5g8id5svt" path="res://img/frame.png" id="3_6u0rj"]
+[ext_resource type="Texture2D" uid="uid://gtr245er7ej4" path="res://img/MathClass.png" id="2_wgaoh"]
+[ext_resource type="FontFile" uid="uid://d06ow2y531h00" path="res://ttf/segoesc.ttf" id="3_dyen4"]
+[ext_resource type="StyleBox" uid="uid://4qdjayvx5yww" path="res://styles/blackboard_green_hover.tres" id="4_hilwg"]
+[ext_resource type="Texture2D" uid="uid://ny2654qfkyxt" path="res://img/door_sprite/0001.png" id="6_2w71s"]
+[ext_resource type="StyleBox" uid="uid://bco8numa0fc82" path="res://styles/blackboard_green.tres" id="7_8hbn2"]
+[ext_resource type="Texture2D" uid="uid://dpdgunc7krdh8" path="res://img/door_sprite/0003.png" id="7_wwq45"]
+[ext_resource type="Texture2D" uid="uid://ctg3m0v8dt66n" path="res://img/door_sprite/0005.png" id="8_aug38"]
+[ext_resource type="Texture2D" uid="uid://bbou5vuwqgy0l" path="res://img/door_sprite/0007.png" id="9_aaclb"]
+[ext_resource type="Texture2D" uid="uid://dcjmm7hk8jmrs" path="res://img/door_sprite/0009.png" id="10_0bo13"]
+[ext_resource type="Texture2D" uid="uid://bt70or0wi1j4c" path="res://img/door_sprite/0011.png" id="11_cpwdi"]
+[ext_resource type="Texture2D" uid="uid://b5de52io4u8r8" path="res://img/door_sprite/0013.png" id="12_g1f2r"]
+[ext_resource type="Texture2D" uid="uid://cni16njg865xh" path="res://img/door_sprite/0015.png" id="13_0jxb0"]
+[ext_resource type="Texture2D" uid="uid://dxdnqejkghdcw" path="res://img/door_sprite/0017.png" id="14_p1xjg"]
+[ext_resource type="Texture2D" uid="uid://c6mc15md40ka3" path="res://img/door_sprite/0019.png" id="15_ebacg"]
+[ext_resource type="Texture2D" uid="uid://no4gyu1l1aa0" path="res://img/door_sprite/0021.png" id="16_wvw7r"]
+[ext_resource type="Texture2D" uid="uid://cy7xkxxef1auc" path="res://img/door_sprite/0023.png" id="17_ctjmm"]
+[ext_resource type="Texture2D" uid="uid://c8p8dfyldooj5" path="res://img/door_sprite/0025.png" id="18_stvvp"]
+[ext_resource type="Texture2D" uid="uid://b7ohdiwfwgyfe" path="res://img/door_sprite/0027.png" id="19_scrw8"]
+[ext_resource type="Texture2D" uid="uid://cg2ondtvdkj2g" path="res://img/door_sprite/0029.png" id="20_r34k4"]
 
-[sub_resource type="Animation" id="Animation_bnatq"]
-resource_name = "DoorOpen"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Door/DoorOpening/Sprite2D:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0.4, 1)]
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_000tv"]
+bg_color = Color(0.482353, 0.509804, 0.113725, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.847059, 0.403922, 0.0156863, 1)
 
-[sub_resource type="Animation" id="Animation_yh3s8"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Door/DoorOpening/Sprite2D:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
+[sub_resource type="ViewportTexture" id="ViewportTexture_26cmn"]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_sq72d"]
-_data = {
-"DoorOpen": SubResource("Animation_bnatq"),
-"RESET": SubResource("Animation_yh3s8")
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_br2oh"]
+bg_color = Color(0.482353, 0.509804, 0.113725, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.847059, 0.403922, 0.0156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qyvci"]
+bg_color = Color(0.482353, 0.509804, 0.113725, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.847059, 0.403922, 0.0156863, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0ksj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2w71s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wwq45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_aug38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_aaclb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0bo13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cpwdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g1f2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0jxb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_p1xjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ebacg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wvw7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ctjmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_stvvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_scrw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r34k4")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a66y3"]
 
 [node name="level1" type="Node2D"]
 script = ExtResource("1_1w7c5")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 412.0
-offset_top = 30.0
-offset_right = 557.0
-offset_bottom = 100.0
-theme_override_font_sizes/font_size = 48
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.333, 0.333)
+texture = ExtResource("2_wgaoh")
+metadata/_edit_lock_ = true
+
+[node name="Question" type="Label" parent="."]
+offset_left = 407.0
+offset_top = 103.0
+offset_right = 836.0
+offset_bottom = 317.0
+theme_override_fonts/font = ExtResource("3_dyen4")
+theme_override_font_sizes/font_size = 28
 text = "Tase 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
 
 [node name="MainMenu" type="Button" parent="."]
-offset_left = 871.0
-offset_top = 432.0
-offset_right = 953.0
-offset_bottom = 474.0
+offset_left = 553.0
+offset_top = 565.0
+offset_right = 686.0
+offset_bottom = 607.0
+theme_override_fonts/font = ExtResource("3_dyen4")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("7_8hbn2")
+theme_override_styles/hover = ExtResource("4_hilwg")
 text = "Peamenüü"
 
-[node name="Door" type="Node2D" parent="."]
+[node name="Answers" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="DoorOpening" type="AnimationPlayer" parent="Door"]
-root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_sq72d")
-}
+[node name="Answer1" type="Button" parent="Answers"]
+layout_mode = 0
+offset_left = 382.0
+offset_top = 350.0
+offset_right = 527.0
+offset_bottom = 488.0
+theme_override_fonts/font = ExtResource("3_dyen4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_000tv")
+theme_override_styles/hover = ExtResource("4_hilwg")
+icon = SubResource("ViewportTexture_26cmn")
+metadata/_edit_lock_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Door/DoorOpening"]
-position = Vector2(300, 350)
-texture = ExtResource("2_54582")
-offset = Vector2(-84, 0)
+[node name="Answer2" type="Button" parent="Answers"]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 349.0
+offset_right = 694.0
+offset_bottom = 487.0
+theme_override_fonts/font = ExtResource("3_dyen4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_br2oh")
+theme_override_styles/hover = ExtResource("4_hilwg")
+metadata/_edit_lock_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Door"]
-position = Vector2(300, 350)
-texture = ExtResource("3_6u0rj")
-offset = Vector2(-84, 0)
+[node name="Answer3" type="Button" parent="Answers"]
+layout_mode = 0
+offset_left = 718.0
+offset_top = 349.0
+offset_right = 863.0
+offset_bottom = 487.0
+theme_override_fonts/font = ExtResource("3_dyen4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_qyvci")
+theme_override_styles/hover = ExtResource("4_hilwg")
+metadata/_edit_lock_ = true
 
-[node name="OpenDoor" type="Button" parent="Door"]
-offset_left = 130.0
-offset_top = 167.0
-offset_right = 303.0
-offset_bottom = 535.0
+[node name="Door" type="AnimatedSprite2D" parent="."]
+position = Vector2(994, 421)
+scale = Vector2(0.26, 0.26)
+sprite_frames = SubResource("SpriteFrames_i0ksj")
+speed_scale = 2.0
+
+[node name="Button" type="Button" parent="Door"]
+anchors_preset = -1
+anchor_left = 0.165
+anchor_top = 0.086
+anchor_right = 0.169
+anchor_bottom = 0.091
+offset_left = -540.2
+offset_top = -977.12
+offset_right = 209.48
+offset_bottom = 633.28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a66y3")
 
 [connection signal="pressed" from="MainMenu" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Door/OpenDoor" to="." method="_on_open_door_pressed"]
+[connection signal="pressed" from="Door/Button" to="." method="_on_open_door_pressed"]

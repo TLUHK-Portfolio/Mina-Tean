@@ -1,0 +1,46 @@
+{
+  "topic": "Math",
+  "level": "1",
+  "questions": [
+      {
+        "question": "Siim oli vaheajal 7 päeva maal. Kodus veetis ta 4 päeva vähem, Mitu päeva oli Siim kodus?",
+        "answers": ["3", "2", "4"]
+      },
+      {
+        "question": "Linda kirjutas 6 lauset, Selma kirjutas 3 lauset rohkem. Mitu lauset kirjutas Selma?",
+        "answers": ["9", "7", "8"]
+      },
+      {
+        "question": "3 cm + 4 cm = ?",
+        "answers": ["7 cm", "9 cm", "8 cm"]
+      },
+      {
+        "question": "Mänd on 7 meetrit kõrge, kask on männist 2 meetrit madalam. Kui kõrge on kask?",
+        "answers": ["5 m", "7 m", "6 m"]
+      },
+      {
+        "question": "15 + … = 17",
+        "answers": ["2", "3", "4"]
+      },
+      {
+        "question": "Oled 8. korrusel ja soovid sõita 5 korrust ülespoole. Mitmendale korrusele sa sõidad",
+        "answers": ["13", "11", "16"]
+      },
+            {
+        "question": "Kõige suurem känguruliik on hiidkänguru, kes püsti seistes võib olla pikem kui inimene. Sündides on aga kängurupojad imetillukesed. Kui pikad nad on? Arvuta. 20-5+4-3-6-8 = … cm",
+        "answers": ["2 cm", "4 cm", "5 cm"]
+      },
+      {
+        "question": "Sipelgas peab puu juurest männiokka oma pessa viima. Pesani on 1 meeter. Sipelgal on käidud 60 cm. Kui palju on sipelgal veel minna?",
+        "answers": ["40 cm", "30 cm", "45 cm"]
+      },
+      {
+        "question": "Siimu ema andis spordivarustuse ostude jaoks 50 eurot. Siim ostab tõukeratta 40 euro eest. Kui palju raha jääb Siimul alles pärast ostude tegemist?",
+        "answers": ["10 eurot", "5 eurot", "15 eurot"]
+      },
+      {
+        "question": "Ema tankis auto bensiinipaagi täis. Sinna mahub 50 liitrit bensiini. Suvilasse sõiduks kulus 10 liitrit bensiini. Kui palju bensiini oli paagis järel suvilasse jõudes?",
+        "answers": ["40 liitrit", "20 liitrit", "30 liitrit"]
+      }
+    ]
+}

@@ -18,3 +18,10 @@ config/icon="res://icon.svg"
 [autoload]
 
 Transition="*res://transition.tscn"
+Questions="*res://read_questions.gd"
+Global="*res://global.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720

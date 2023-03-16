@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhy4oks86n0de"]
+
+[ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
+
+[node name="LevelFinished" type="Node2D"]
+script = ExtResource("1_l3p1g")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 292.0
+offset_top = 259.0
+offset_right = 869.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 60
+text = "Õnnitlen, said läbi!!!"
+
+[node name="ToMainMenu" type="Button" parent="."]
+offset_left = 814.0
+offset_top = 475.0
+offset_right = 1008.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 24
+text = "Peamenüüsse"
+
+[connection signal="pressed" from="ToMainMenu" to="." method="_on_to_main_menu_pressed"]

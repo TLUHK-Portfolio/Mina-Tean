@@ -10,64 +10,47 @@ func _ready():
     var answers = Questions.current().answers;
     answers.shuffle()
     
-    $Answers/Answer1.set("text",  answers[0])
-    $Answers/Answer2.set("text",  answers[1])
-    $Answers/Answer3.set("text",  answers[2])
+    $Answer1.set("text",  answers[0])
+    $Answer2.set("text",  answers[1])
+    $Answer3.set("text",  answers[2])
     
-    $Answers/Answer1.pressed.connect(self.answer1_pressed)
-    $Answers/Answer2.pressed.connect(self.answer2_pressed)
-    $Answers/Answer3.pressed.connect(self.answer3_pressed)
+    $Answer1.pressed.connect(self.answer1_pressed)
+    $Answer2.pressed.connect(self.answer2_pressed)
+    $Answer3.pressed.connect(self.answer3_pressed)
         
 
 func answer1_pressed():
-  test_answer($Answers/Answer1)    
+  test_answer($Answer1, $Answer1_colors)    
 
 func answer2_pressed():
-  test_answer($Answers/Answer2)    
+  test_answer($Answer2, $Answer2_colors)    
 
 func answer3_pressed():
-  test_answer($Answers/Answer3)    
+  test_answer($Answer3, $Answer3_colors)    
 
 
-func test_answer(button: Button):
+func test_answer(button: Button, button_color: ColorRect): 
+  var color = button_color.color
+  
   if (button.get("text") == right_answer):
-    button.get_theme_stylebox("normal").bg_color = Color("#bada55")
-    #button.set("theme_override_styles/pressed/StyleBoxFlat/bg_color", Color("#bada55"))  
+    #button.set_theme_stylebox("normal", "StyleBoxFlat").bg_color = Color("#bada55")
+    button_color.color = Color(0, 0.5, 0, 1)
+    $Door.play()
+    await $Door.animation_finished
+    button_color.color = color
+    Global.question = Global.question + 1
+    if Global.question < Questions.questions.size():
+      Transition.change_scene("res://level1.tscn")
+    else:
+      Transition.change_scene("res://level_finished.tscn")  
   else: 
-    button.get_theme_stylebox("normal").bg_color = Color("#000000")
+    button_color.color = Color(0.7, 0, 0, 1)
+    $Timer.start()
+    await $Timer.timeout
+    button_color.color = color
+    #button.get_theme_stylebox("normal",  "StyleBoxFlat").bg_color = Color("#000000")
     # button.set("custom_styles/normal").bg_color = Color("#000000")
 
 
 func _on_button_pressed():
   Transition.change_scene("res://main.tscn")
-
-
-func _on_open_door_pressed():
-  $Door.play()
-  await $Door.animation_finished
-  Global.question = Global.question + 1
-  if Global.question < Questions.questions.size():
-   Transition.change_scene("res://level1.tscn")
-  else:
-   Transition.change_scene("res://level_finished.tscn") 
-
-
-    #var pressed = $Answers.group.get_pressed_button().name
-    #var answer = get_node("Answers/"+pressed).get("text")
- 
-    #if answer == right_answer:        
-  
-
-# for i in group
-#    i.connect("pressed", self, "funktsioon")
-# group.get_buttons()
-# group.get_pressed_button()
-
-
-func _on_door_animation_finished():
-  $Door.stop()
-  Global.question = Global.question + 1
-  if Global.question < Questions.questions.size():
-   Transition.change_scene("res://level1.tscn")
-  else:
-   Transition.change_scene("res://level_finished.tscn") 

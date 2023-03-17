@@ -1,88 +1,85 @@
-[gd_scene load_steps=5 format=3 uid="uid://x3tavmxip6tp"]
+[gd_scene load_steps=10 format=3 uid="uid://x3tavmxip6tp"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g5x4g"]
-[ext_resource type="StyleBox" uid="uid://bco8numa0fc82" path="res://styles/blackboard_green.tres" id="2_lkr13"]
-[ext_resource type="StyleBox" uid="uid://4qdjayvx5yww" path="res://styles/blackboard_green_hover.tres" id="3_x2bnx"]
+[ext_resource type="Texture2D" uid="uid://b317e3urpkabc" path="res://img/MainMenu.png" id="2_e0p74"]
 [ext_resource type="FontFile" uid="uid://d06ow2y531h00" path="res://ttf/segoesc.ttf" id="4_m80pn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maxy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mndou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7jtli"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgp76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2bsp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih7ba"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_g5x4g")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
-color = Color(0.917647, 0.784314, 0.988235, 1)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(639.2, 359.3)
+scale = Vector2(0.334, 0.333)
+texture = ExtResource("2_e0p74")
 
-[node name="Level4" type="Button" parent="ColorRect"]
+[node name="Level1" type="Button" parent="Sprite2D"]
 layout_direction = 1
-offset_left = 786.0
-offset_top = 193.0
-offset_right = 933.0
-offset_bottom = 409.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = ExtResource("2_lkr13")
-theme_override_styles/hover = ExtResource("3_x2bnx")
-
-[node name="Label" type="Label" parent="ColorRect"]
-offset_left = 399.0
-offset_top = 45.0
-offset_right = 671.0
-offset_bottom = 149.0
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.890196, 0.392157, 0, 1)
-theme_override_fonts/font = ExtResource("4_m80pn")
-theme_override_font_sizes/font_size = 63
-text = "Katsetus"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Level1" type="Button" parent="ColorRect"]
-layout_direction = 1
-offset_left = 91.0
-offset_top = 189.0
-offset_right = 238.0
-offset_bottom = 405.0
+offset_left = -890.0
+offset_top = -253.0
+offset_right = -465.0
+offset_bottom = 182.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_m80pn")
 theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = ExtResource("2_lkr13")
-theme_override_styles/hover = ExtResource("3_x2bnx")
-text = "Tase1"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
 
-[node name="Level3" type="Button" parent="ColorRect"]
+[node name="Level2" type="Button" parent="Sprite2D"]
 layout_direction = 1
-offset_left = 553.0
-offset_top = 191.0
-offset_right = 700.0
-offset_bottom = 407.0
+offset_left = -213.0
+offset_top = -256.0
+offset_right = 215.0
+offset_bottom = 179.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/normal = ExtResource("2_lkr13")
-theme_override_styles/hover = ExtResource("3_x2bnx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mndou")
 
-[node name="Level2" type="Button" parent="ColorRect"]
+[node name="Level3" type="Button" parent="Sprite2D"]
 layout_direction = 1
-offset_left = 319.0
-offset_top = 191.0
-offset_right = 466.0
-offset_bottom = 407.0
+offset_left = 454.0
+offset_top = -250.0
+offset_right = 886.0
+offset_bottom = 185.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/normal = ExtResource("2_lkr13")
-theme_override_styles/hover = ExtResource("3_x2bnx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7jtli")
 
-[node name="Exit" type="Button" parent="ColorRect"]
-offset_left = 910.0
-offset_top = 465.0
-offset_right = 1014.0
-offset_bottom = 540.0
-theme_override_fonts/font = ExtResource("4_m80pn")
+[node name="Level4" type="Button" parent="Sprite2D"]
+layout_direction = 1
+offset_left = -893.0
+offset_top = 347.0
+offset_right = -459.0
+offset_bottom = 782.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cgp76")
+
+[node name="Level5" type="Button" parent="Sprite2D"]
+offset_left = -213.0
+offset_top = 350.0
+offset_right = 209.0
+offset_bottom = 788.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
+
+[node name="Exit" type="Button" parent="Sprite2D"]
+offset_left = 460.0
+offset_top = 344.0
+offset_right = 894.0
+offset_bottom = 782.0
 theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = ExtResource("2_lkr13")
-theme_override_styles/hover = ExtResource("3_x2bnx")
-text = "Välja"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ih7ba")
 
-[connection signal="pressed" from="ColorRect/Level1" to="." method="_on_level1_pressed"]
-[connection signal="pressed" from="ColorRect/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Sprite2D/Level1" to="." method="_on_level1_pressed"]
+[connection signal="pressed" from="Sprite2D/Exit" to="." method="_on_exit_pressed"]

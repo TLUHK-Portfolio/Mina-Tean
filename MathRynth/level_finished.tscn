@@ -1,24 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhy4oks86n0de"]
+[gd_scene load_steps=4 format=3 uid="uid://dhy4oks86n0de"]
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
+[ext_resource type="FontFile" uid="uid://d06ow2y531h00" path="res://ttf/segoesc.ttf" id="2_yj6ol"]
+[ext_resource type="StyleBox" uid="uid://bco8numa0fc82" path="res://styles/blackboard_green.tres" id="3_l5nbd"]
 
 [node name="LevelFinished" type="Node2D"]
 script = ExtResource("1_l3p1g")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 292.0
-offset_top = 259.0
-offset_right = 869.0
-offset_bottom = 345.0
-theme_override_font_sizes/font_size = 60
-text = "Õnnitlen, said läbi!!!"
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1292.0
+offset_bottom = 732.0
+color = Color(0.980392, 0.992157, 0.784314, 1)
 
-[node name="ToMainMenu" type="Button" parent="."]
+[node name="ToMainMenu" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 814.0
 offset_top = 475.0
 offset_right = 1008.0
 offset_bottom = 555.0
+theme_override_fonts/font = ExtResource("2_yj6ol")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("3_l5nbd")
 text = "Peamenüüsse"
 
-[connection signal="pressed" from="ToMainMenu" to="." method="_on_to_main_menu_pressed"]
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 259.0
+offset_right = 869.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(1, 0.34902, 0, 1)
+theme_override_fonts/font = ExtResource("2_yj6ol")
+theme_override_font_sizes/font_size = 60
+text = "Õnnitlen, said läbi!!!"
+
+[connection signal="pressed" from="ColorRect/ToMainMenu" to="." method="_on_to_main_menu_pressed"]

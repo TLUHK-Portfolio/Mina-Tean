@@ -43,9 +43,10 @@ func test_answer(button: Button, button_color: ColorRect):
     await $AnimationPlayer/AnimatedScene/Door.animation_finished
     button_color.color = color
     Global.question = Global.question + 1
-    if Global.question < Questions.questions.size():
+    if Global.question < Questions.size():
       Transition.change_scene("res://level2.tscn")
     else:
+      Global.question = 0
       Transition.change_scene("res://level_finished.tscn")  
   else: 
     button_color.color = Color(0.7, 0, 0, 1)
@@ -57,4 +58,5 @@ func test_answer(button: Button, button_color: ColorRect):
 
 
 func _on_button_pressed():
+  Global.questions = 0
   Transition.change_scene("res://main.tscn")

@@ -1,7 +1,7 @@
 extends Node
 
 var topic = ""
-var level = ""
+var levels
 var questions = ""
 
 func read_questions():
@@ -15,13 +15,12 @@ func read_questions():
   json.parse(data)
     
   var game_data = json.data
-
-  topic = game_data["topic"]
-  level = game_data["level"]
-  questions = game_data["questions"]
+  levels = game_data["levels"]
 
   return
 
 func current():
-    return questions[Global.question]
+  return levels[Global.level].questions[Global.question]
     
+func size():
+  return levels[Global.level].questions.size()

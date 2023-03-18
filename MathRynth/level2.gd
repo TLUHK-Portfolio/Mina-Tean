@@ -58,5 +58,5 @@ func test_answer(button: Button, button_color: ColorRect):
 
 
 func _on_button_pressed():
-  Global.questions = 0
+  Global.question = 0
   Transition.change_scene("res://main.tscn")

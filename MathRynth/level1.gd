@@ -5,6 +5,7 @@ var group: ButtonGroup
 var right_answer = Questions.current().answers[0]
 # Called when the node enters the scene tree for the first time.
 func _ready():
+   
     $Question.set("text", Questions.current().question)
     
     var answers = Questions.current().answers;
@@ -17,6 +18,7 @@ func _ready():
     $Answer1.pressed.connect(self.answer1_pressed)
     $Answer2.pressed.connect(self.answer2_pressed)
     $Answer3.pressed.connect(self.answer3_pressed)
+    
         
 
 func answer1_pressed():
@@ -35,8 +37,8 @@ func test_answer(button: Button, button_color: ColorRect):
   if (button.get("text") == right_answer):
     #button.set_theme_stylebox("normal", "StyleBoxFlat").bg_color = Color("#bada55")
     button_color.color = Color(0, 0.5, 0, 1)
-    $Door.play()
-    await $Door.animation_finished
+    $AnimationPlayer/Door.play()
+    await $AnimationPlayer/Door.animation_finished
     button_color.color = color
     Global.question = Global.question + 1
     if Global.question < Questions.questions.size():

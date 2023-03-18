@@ -21,3 +21,7 @@ func _on_exit_pressed():
 func _on_level1_pressed():
     # get_tree().change_scene_to_file("res://level1.tscn")
     Transition.change_scene("res://level1.tscn")
+
+
+func _on_level_2_pressed():
+    Transition.change_scene("res://level2.tscn")

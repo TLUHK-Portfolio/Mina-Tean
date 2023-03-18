@@ -13,10 +13,12 @@ config_version=5
 config/name="MathRynth"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/image="res://img/icon.png"
+config/icon="res://img/icon.png"
 
 [autoload]
 
+BackgroundMusic="*res://background_music.tscn"
 Transition="*res://transition.tscn"
 Questions="*res://read_questions.gd"
 Global="*res://global.gd"

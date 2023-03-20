@@ -1,0 +1,251 @@
+[gd_scene load_steps=28 format=3 uid="uid://cmsn2exyxg7d5"]
+
+[ext_resource type="Script" path="res://math_class.gd" id="1_rbihj"]
+[ext_resource type="Texture2D" uid="uid://gtr245er7ej4" path="res://img/MathClass.png" id="2_sxdts"]
+[ext_resource type="FontFile" uid="uid://dmijbnep8lnye" path="res://ttf/IHateComicSans.ttf" id="3_g8i6e"]
+[ext_resource type="Texture2D" uid="uid://ny2654qfkyxt" path="res://img/door_sprite/0001.png" id="4_agtol"]
+[ext_resource type="Texture2D" uid="uid://dpdgunc7krdh8" path="res://img/door_sprite/0003.png" id="5_7kr3q"]
+[ext_resource type="Texture2D" uid="uid://ctg3m0v8dt66n" path="res://img/door_sprite/0005.png" id="6_1ccpp"]
+[ext_resource type="Texture2D" uid="uid://bbou5vuwqgy0l" path="res://img/door_sprite/0007.png" id="7_ggfw8"]
+[ext_resource type="Texture2D" uid="uid://dcjmm7hk8jmrs" path="res://img/door_sprite/0009.png" id="8_20vg6"]
+[ext_resource type="Texture2D" uid="uid://bt70or0wi1j4c" path="res://img/door_sprite/0011.png" id="9_gpl1h"]
+[ext_resource type="Texture2D" uid="uid://b5de52io4u8r8" path="res://img/door_sprite/0013.png" id="10_3nxrl"]
+[ext_resource type="Texture2D" uid="uid://cni16njg865xh" path="res://img/door_sprite/0015.png" id="11_5k4xy"]
+[ext_resource type="Texture2D" uid="uid://dxdnqejkghdcw" path="res://img/door_sprite/0017.png" id="12_dto5a"]
+[ext_resource type="Texture2D" uid="uid://c6mc15md40ka3" path="res://img/door_sprite/0019.png" id="13_8fupa"]
+[ext_resource type="Texture2D" uid="uid://no4gyu1l1aa0" path="res://img/door_sprite/0021.png" id="14_8gfr7"]
+[ext_resource type="Texture2D" uid="uid://cy7xkxxef1auc" path="res://img/door_sprite/0023.png" id="15_xqs3g"]
+[ext_resource type="Texture2D" uid="uid://c8p8dfyldooj5" path="res://img/door_sprite/0025.png" id="16_1usya"]
+[ext_resource type="Texture2D" uid="uid://b7ohdiwfwgyfe" path="res://img/door_sprite/0027.png" id="17_l004b"]
+[ext_resource type="Texture2D" uid="uid://cg2ondtvdkj2g" path="res://img/door_sprite/0029.png" id="18_0f81q"]
+
+[sub_resource type="Animation" id="Animation_yla6e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/AnimatedScene:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.28, 1.28)]
+}
+
+[sub_resource type="Animation" id="Animation_64ajj"]
+resource_name = "move_to_blackboard"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/AnimatedScene:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.28, 1.28)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qpxhq"]
+_data = {
+"RESET": SubResource("Animation_yla6e"),
+"move_to_blackboard": SubResource("Animation_64ajj")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2tyta"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd4kb"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_26cmn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qagh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7pa3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0ksj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_agtol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7kr3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1ccpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ggfw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_20vg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gpl1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3nxrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5k4xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dto5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8fupa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8gfr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xqs3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1usya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l004b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0f81q")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MathClass" type="Node2D"]
+script = ExtResource("1_rbihj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qpxhq")
+}
+
+[node name="AnimatedScene" type="Control" parent="AnimationPlayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -362.0
+offset_right = 642.0
+offset_bottom = 364.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.28, 1.28)
+pivot_offset = Vector2(641, 362)
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="AnimationPlayer/AnimatedScene"]
+position = Vector2(640, 360)
+scale = Vector2(0.333, 0.333)
+texture = ExtResource("2_sxdts")
+metadata/_edit_lock_ = true
+
+[node name="MainMenu" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 956.0
+offset_top = 164.0
+offset_right = 1041.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2tyta")
+metadata/_edit_lock_ = true
+
+[node name="Answer1_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 381.625
+offset_top = 363.563
+offset_right = 527.625
+offset_bottom = 500.563
+color = Color(0.678431, 0, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="Answer2_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 548.031
+offset_top = 362.781
+offset_right = 694.031
+offset_bottom = 500.781
+color = Color(0.678431, 0, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="Answer3_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 718.344
+offset_top = 366.688
+offset_right = 862.344
+offset_bottom = 501.688
+color = Color(0.678431, 0, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="Answer1" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 380.844
+offset_top = 362.781
+offset_right = 525.844
+offset_bottom = 500.781
+theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wd4kb")
+icon = SubResource("ViewportTexture_26cmn")
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Answer2" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 547.25
+offset_top = 365.906
+offset_right = 691.25
+offset_bottom = 503.906
+theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5qagh")
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Answer3" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 717.563
+offset_top = 365.125
+offset_right = 862.563
+offset_bottom = 503.125
+theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v7pa3")
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Question" type="Label" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 95.0
+offset_right = 880.0
+offset_bottom = 342.0
+theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Door" type="AnimatedSprite2D" parent="AnimationPlayer/AnimatedScene"]
+position = Vector2(997.25, 423.719)
+scale = Vector2(0.263218, 0.263218)
+sprite_frames = SubResource("SpriteFrames_i0ksj")
+speed_scale = 2.0
+metadata/_edit_lock_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="pressed" from="AnimationPlayer/AnimatedScene/MainMenu" to="." method="_on_button_pressed"]

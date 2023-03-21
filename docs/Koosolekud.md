@@ -165,3 +165,51 @@ Mida tegin, kas oli probleeme?
 | 6   | Disaini dokumendi uuendamine Githubis | Siiri  |08.03  |
 
 <br>
+
+## 19.03.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 20:00
+Lõpp: 21:10
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+<ol>
+  <li>Siiri Inno
+  <p>avakuva vaate tegemine; detailide paika saamine võtab aega (kiri välja veninud, värvid);</p>
+  </li>
+  <li>Mario Murd
+  <p>lõi stseenid Blenderis; detailid loodusõpetuse jaoks (gloobus), eesti keel (tähestik), matemaatika (geom kujundid, õpik); Blenderis värvidega toimetamine; Blenderiga töötamine vajas harjutamist ja guugledamist;</p>
+  </li>
+  <li>Andrus Küünarpu
+  <p>json fail küsimuste sisselugemiseks; piltide ja nuppude lisamine; küsimused ja vastused ei mahu alati hästi ära;</p>
+  </li>
+  <li>Riina Muld
+  <p>tööülesannete kirjeldamine; release kokkupanemine;</p>
+  </li>
+</ol>
+
+### Kokkulepped, otsused
+
+<ol>
+  <li>Praktikapäeviku täitmine, tähtaeg 22.03.2023 kell 19:00</li>
+  <li>Kanban ülesannete täiendus (disain) - Heli vaigistamise nupp lisada klassi vaatesse </li>
+</ol>
+
+### Tegevused edasiseks
+
+|     | Tegevuse kirjeldus |Vastutaja      | Tähtaeg |
+| -   | ------------------ |----------- | ----------- |
+| 1   |[Praktikapäeviku](https://github.com/tluhk/Multimeediumi_praktika/issues/) täitmine |KÕIK   | 22.03 kell 19:00 |
+| 2   |Järgmine koosolek        |KÕIK   | TBD  |
+| 3   | Githubi lisada exe ja uuendada sellekohased lingid Readmes | Andrus  | 22.03  |
+| 4   | Mängu nimi (eestikeelne) mõelda ja uuendada dokumentatsioon  | Siiri  |22.03  |
+| 5   | Git versioonide kättesaadavus, kontrolli release tag-e VSCode  | Riina  |22.03  |

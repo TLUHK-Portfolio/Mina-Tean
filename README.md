@@ -1,4 +1,4 @@
-# Mathrynt
+# Mina tean!
 ## Üldine informatsioon
 Käesolev projekt on loodud Tallinna Ülikooli Haapsalu kolledži tudengite poolt õppeotstarbel multimeediumi praktika raames. Praktika käigus rakendame koolis õpitud oskusi arvutimängu loomisel.
 
@@ -16,13 +16,16 @@ Projekti liikmed:
 Projekti etappide kirjeldamiseks valmis üldine ülevaade [tegevuskavas](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Tegevuskava.md).
  
 ## Mängu Mina tean! kirjeldus
-Mängu **Mina tean!** käigus peab mängija liikuma ruumides ning edasi pääsemiseks tuleb mängijal lahendada ülesandeid. Sõltuvalt sellest kas vastus on õige või vale, avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
+Mängu **Mina tean!** käigus peab mängija liikuma ruumides ning edasi pääsemiseks 
+tuleb mängijal lahendada ülesandeid. Sõltuvalt sellest kas vastus on õige või vale,
+avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. 
+Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
 
 ## Kasutatavad tehnoloogiad
 ### Mängumootor
 [Mängumootorite võrdlemiseks](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Mangumootorid.md) valmis tabel ning detailsemaks uurimiseks analüüs. Valitud mängumootoriks on Godot 4.0. 
 
-## Mängu Mathrynth kasutamine
+## Mängu Mina tean! kasutamine
 Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/binary) kausta [MathRynth.exe](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/binaryMathRynth.exe) fail. 
 Kui on soov kasutada lähtekoodi, siis tuleks [Mina tean!](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/) kaust alla laadida ning avada Godot 4.0 mängumootoris, mille saab vajadusel alla laadida [Godot kodulehelt](https://godotengine.org/).
 

@@ -1,4 +1,4 @@
-# Mängu disaini dokument
+# Mängu Mina Tean! disaini dokument
 
 ## Mängu disain
 

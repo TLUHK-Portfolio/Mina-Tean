@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://math_class.gd" id="1_rbihj"]
 [ext_resource type="Texture2D" uid="uid://gtr245er7ej4" path="res://img/MathClass.png" id="2_sxdts"]
-[ext_resource type="FontFile" uid="uid://dmijbnep8lnye" path="res://ttf/IHateComicSans.ttf" id="3_g8i6e"]
+[ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_nmdn3"]
 [ext_resource type="Texture2D" uid="uid://ny2654qfkyxt" path="res://img/door_sprite/0001.png" id="4_agtol"]
 [ext_resource type="Texture2D" uid="uid://dpdgunc7krdh8" path="res://img/door_sprite/0003.png" id="5_7kr3q"]
 [ext_resource type="Texture2D" uid="uid://ctg3m0v8dt66n" path="res://img/door_sprite/0005.png" id="6_1ccpp"]
@@ -193,7 +193,7 @@ offset_left = 380.844
 offset_top = 362.781
 offset_right = 525.844
 offset_bottom = 500.781
-theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_fonts/font = ExtResource("3_nmdn3")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_wd4kb")
 icon = SubResource("ViewportTexture_26cmn")
@@ -206,7 +206,7 @@ offset_left = 547.25
 offset_top = 365.906
 offset_right = 691.25
 offset_bottom = 503.906
-theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_fonts/font = ExtResource("3_nmdn3")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5qagh")
 clip_text = true
@@ -218,7 +218,7 @@ offset_left = 717.563
 offset_top = 365.125
 offset_right = 862.563
 offset_bottom = 503.125
-theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_fonts/font = ExtResource("3_nmdn3")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_v7pa3")
 clip_text = true
@@ -230,7 +230,7 @@ offset_left = 358.0
 offset_top = 95.0
 offset_right = 880.0
 offset_bottom = 342.0
-theme_override_fonts/font = ExtResource("3_g8i6e")
+theme_override_fonts/font = ExtResource("3_nmdn3")
 theme_override_font_sizes/font_size = 28
 horizontal_alignment = 1
 vertical_alignment = 1

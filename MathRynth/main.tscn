@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://main.gd" id="1_g5x4g"]
 [ext_resource type="Texture2D" uid="uid://b317e3urpkabc" path="res://img/MainMenu.png" id="2_e0p74"]
-[ext_resource type="FontFile" uid="uid://d06ow2y531h00" path="res://ttf/segoesc.ttf" id="4_m80pn"]
+[ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_32go2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maxy6"]
 
@@ -32,7 +32,7 @@ offset_right = -465.0
 offset_bottom = 182.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_fonts/font = ExtResource("4_m80pn")
+theme_override_fonts/font = ExtResource("3_32go2")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
 

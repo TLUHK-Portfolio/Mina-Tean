@@ -111,8 +111,8 @@ Designeris.</p>
 
 ### Kujundus
 <p>Mängus on kasutatud lastepärast kujundust - rõõmsaid värvitoone ja toredaid pilte.</p>
-<p>TODO!! Fondiks on valitud:</p>
-<p>TODO!! Värvid:
+<p>Fondiks on valitud: Nunito-SemiBold</p>
+<p>Värvid:
 <ol>
    <li>roheline tahvel #7B811D</li>
    <li>tumeroheline tekst #004259</li>

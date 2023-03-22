@@ -26,7 +26,7 @@ Mängu tulemusest sõltub, kas ta saab järgmisele tasemele.
 [Mängumootorite võrdlemiseks](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Mangumootorid.md) valmis tabel ning detailsemaks uurimiseks analüüs. Valitud mängumootoriks on Godot 4.0. 
 
 ## Mängu Mina tean! kasutamine
-Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary) kausta [MinaTean.exe](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary/MinaTean.exe) fail. 
+Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary) kausta kompileeritud mäng. Mängu mängimiseks tuleb [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary) kaustast alla laadida failid [MinaTean.exe](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary/MinaTean.exe) ja [MinaTean.pck](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary/MinaTean.pck). Failid tuleb laadida samasse kausta. 
 Kui on soov kasutada lähtekoodi, siis tuleks [Mina tean](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/) kaust alla laadida ning avada Godot 4.0 mängumootoris, mille saab vajadusel alla laadida [Godot kodulehelt](https://godotengine.org/).
 
 ## Disain

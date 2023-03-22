@@ -26,8 +26,8 @@ Mängu tulemusest sõltub, kas ta saab järgmisele tasemele.
 [Mängumootorite võrdlemiseks](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Mangumootorid.md) valmis tabel ning detailsemaks uurimiseks analüüs. Valitud mängumootoriks on Godot 4.0. 
 
 ## Mängu Mina tean! kasutamine
-Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/binary) kausta [MathRynth.exe](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/binaryMathRynth.exe) fail. 
-Kui on soov kasutada lähtekoodi, siis tuleks [Mina tean!](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MathRynth/) kaust alla laadida ning avada Godot 4.0 mängumootoris, mille saab vajadusel alla laadida [Godot kodulehelt](https://godotengine.org/).
+Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary) kausta [MinaTean.exe](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/binary/MinaTean.exe) fail. 
+Kui on soov kasutada lähtekoodi, siis tuleks [Mina tean](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/) kaust alla laadida ning avada Godot 4.0 mängumootoris, mille saab vajadusel alla laadida [Godot kodulehelt](https://godotengine.org/).
 
 ## Disain
 Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/DisainiPlaan.md)

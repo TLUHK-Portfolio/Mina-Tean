@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://818swap3lqr7"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_g5x4g"]
+[ext_resource type="Texture2D" uid="uid://c7dd4rwv6a52p" path="res://img/MainMenu.png" id="2_e0p74"]
+[ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_32go2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maxy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mndou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7jtli"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgp76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2bsp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih7ba"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_g5x4g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(639.2, 359.3)
+texture = ExtResource("2_e0p74")
+
+[node name="Level1" type="Button" parent="Sprite2D"]
+layout_direction = 1
+offset_left = -300.0
+offset_top = -86.0
+offset_right = -153.0
+offset_bottom = 62.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_32go2")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
+
+[node name="Level2" type="Button" parent="Sprite2D"]
+layout_direction = 1
+offset_left = -73.0
+offset_top = -85.0
+offset_right = 73.0
+offset_bottom = 60.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mndou")
+
+[node name="Level3" type="Button" parent="Sprite2D"]
+layout_direction = 1
+offset_left = 151.0
+offset_top = -86.0
+offset_right = 296.0
+offset_bottom = 60.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7jtli")
+
+[node name="Level4" type="Button" parent="Sprite2D"]
+layout_direction = 1
+offset_left = -298.0
+offset_top = 115.0
+offset_right = -153.0
+offset_bottom = 260.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cgp76")
+
+[node name="Level5" type="Button" parent="Sprite2D"]
+offset_left = -70.0
+offset_top = 116.0
+offset_right = 71.0
+offset_bottom = 260.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
+
+[node name="Exit" type="Button" parent="Sprite2D"]
+offset_left = 152.0
+offset_top = 117.0
+offset_right = 295.0
+offset_bottom = 261.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ih7ba")
+
+[connection signal="pressed" from="Sprite2D/Level1" to="." method="_on_level1_pressed"]
+[connection signal="pressed" from="Sprite2D/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Sprite2D/Exit" to="." method="_on_exit_pressed"]

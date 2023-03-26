@@ -31,28 +31,18 @@ Lõpp: 11:40
 ### Järgmise iteratsiooni plaan
 Vaatame üle ülesanded, mis on hetkel skoobis. Lisame ja kirjeldame vajadusel juhendajate ettepanekud ülesannetes. Määrame ülesannetele vastutajad ja tähtajad.
 <br>
-<br>
-Arendus:
-- [Tekstifailist andmete sisse lugemine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22649172)
-- [Ukse avanemise loogika](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22649218)
-- [JSON failis andmete korrastamine ja täiendamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925585)
-- [Heli seadistamine keskselt](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23520153)
-<br>
-<br>
-Disain:
-<br>
-- [Ekraani suurus](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518095)<br>
-- [Kolli pilt uksele](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925672)<br>
-- [Vastamiste eest premeerimine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913596)<br>
-- [Progressi kuvamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913167)<br>
-- [Heli vaigistamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518132)<br>
-- [Lõpukuva](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22594703)<br>
-- [Heli loomine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22595016)
-<br>
-<br>
-Dokumentatsioon:
-<br>
-- [Esimese taseme tähe suuruse loogika](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23891506)
+- Arendus: [Tekstifailist andmete sisse lugemine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22649172)
+- Arendus: [Ukse avanemise loogika](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22649218)
+- Arendus: [JSON failis andmete korrastamine ja täiendamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925585)
+- Arendus: [Heli seadistamine keskselt](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23520153)
+- Disain: [Ekraani suurus](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518095)<br>
+- Disain: [Kolli pilt uksele](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925672)<br>
+- Disain: [Vastamiste eest premeerimine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913596)<br>
+- Disain: [Progressi kuvamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913167)<br>
+- Disain: [Heli vaigistamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518132)<br>
+- Disain: [Lõpukuva](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22594703)<br>
+- Disain: [Heli loomine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22595016)
+- Dokumentatsioon: [Esimese taseme tähe suuruse loogika](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23891506)
 <br>
 
 ## 19.03.2023

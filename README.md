@@ -36,24 +36,21 @@ Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://github.com/t
 Grupi koosolekute [memod](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md)<br>
 Koosolekute lühiülevaade:
 <ul>
-  <li><strong>18.02.2023 koosolek</strong> - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>
-  OTSUS:<br> 
-  - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00<br> 
-  - Kasutame mängumootorina Unityt või Godot<br>
-  - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 <br>
-  - Järgmine koosolek 05.märts kell 10:00<br>
+  <li>
+  <strong>26.03.2023 koosolek</strong> <br>
+  <strong>Kestus: 10.30 - 11.40</strong> <br>
+  - juhendajatelt saadud tagasiside ja sellest tulenevad tegevused;
+  - järgmise iteratsiooni plaan
+  - ülesannete läbivaatamine (_refinement_), kirjelduste täpsustamine, vastutajate ja tähtaegade määramine;
+  - järgmine koosolek 02.04 kell 10:00 <br>  
   </li>
   <li>
-   <strong>23.02.2023 koosolek</strong><br>
-   <strong>Kestus: 11.30 - 12.45</strong> <br>
-   Koosoleku teemad:<br>
-   - Projekti todo list ülevaatus. <br>
-   - Uute ülesannete jagamine. <br>
-   - Mängijale mängu käigu edukuse kohta tagasiside andmine. <br>
-   - Mängu käigu detailsem arutlus. <br>
-   - Mängus esinevate küsimuste temaatika arutlus:<br>
-    Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks <br>
-   - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
+  <strong>19.03.2023 koosolek</strong> <br>
+  <strong>Kestus: 20.00 - 21.10</strong> <br>
+  - eelnenud perioodi ülevaade ja tehtud tööd;
+  - Githubi uue exe lisamine;
+  - mängule eestikeelne nimi;
+  - Igaühel praktikapäevik täidetud 22.03 kell 19:00<br>
   </li>
   <li>
   <strong>05.03.2023 koosolek</strong> <br>
@@ -68,6 +65,25 @@ Koosolekute lühiülevaade:
   - Kasutame mängumootorina Godot<br>
   - Mäng saab olema 2D<br>
   - Järgmine koosolek 18.03 kell 10:00 (plaan B: 21.03 kell 18:00)<br>
+  </li>
+  <li>
+   <strong>23.02.2023 koosolek</strong><br>
+   <strong>Kestus: 11.30 - 12.45</strong> <br>
+   Koosoleku teemad:<br>
+   - Projekti todo list ülevaatus. <br>
+   - Uute ülesannete jagamine. <br>
+   - Mängijale mängu käigu edukuse kohta tagasiside andmine. <br>
+   - Mängu käigu detailsem arutlus. <br>
+   - Mängus esinevate küsimuste temaatika arutlus:<br>
+    Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks <br>
+   - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
+  </li>
+  <li><strong>18.02.2023 koosolek</strong> - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>
+  OTSUS:<br> 
+  - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00<br> 
+  - Kasutame mängumootorina Unityt või Godot<br>
+  - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 <br>
+  - Järgmine koosolek 05.märts kell 10:00<br>
   </li>
 </ul>
 

@@ -25,5 +25,6 @@ Global="*res://global.gd"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=3840
+window/size/viewport_height=2160
+window/stretch/mode="viewport"

@@ -21,9 +21,11 @@ func _on_exit_pressed():
 func _on_level1_pressed():
     # get_tree().change_scene_to_file("res://level1.tscn")
     Global.level = 0
-    Transition.change_scene("res://math_class.tscn")
+    Questions.prepare()
+    Transition.change_scene("res://level1.tscn")
 
 
 func _on_level_2_pressed():
-    Global.level = 1
-    Transition.change_scene("res://math_class.tscn")
+    #Global.level = 1
+    #Transition.change_scene("res://level1.tscn")
+    pass

@@ -20,7 +20,8 @@
 script = ExtResource("1_g5x4g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(639.2, 359.3)
+position = Vector2(1920, 1080)
+scale = Vector2(3, 3)
 texture = ExtResource("2_e0p74")
 
 [node name="Level1" type="Button" parent="Sprite2D"]

@@ -2,7 +2,8 @@ extends Node
 
 var topic = ""
 var levels
-var questions = ""
+var questions = []
+var questions_from_class = 4
 
 func read_questions():
   if not FileAccess.file_exists("res://questions.json"):
@@ -19,8 +20,19 @@ func read_questions():
 
   return
 
+func prepare():
+    var classrooms = levels[Global.level]
+    print(classrooms)
+    for cls in classrooms:  
+        classrooms[cls].questions.shuffle()
+        for i in questions_from_class:
+          var new_question = classrooms[cls].questions[i]
+          new_question["classroom"] = cls
+          questions.append(new_question)
+    questions.shuffle()          
+
 func current():
-  return levels[Global.level].questions[Global.question]
+  return questions[Global.question]
     
 func size():
-  return levels[Global.level].questions.size()
+  return questions.size()

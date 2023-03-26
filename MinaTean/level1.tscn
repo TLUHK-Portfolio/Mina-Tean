@@ -1,7 +1,8 @@
-[gd_scene load_steps=25 format=3 uid="uid://cqe223eosrdy2"]
+[gd_scene load_steps=28 format=3 uid="uid://cdy1djfjbjlnq"]
 
-[ext_resource type="Texture2D" uid="uid://gtr245er7ej4" path="res://img/MathClass.png" id="2_wgaoh"]
-[ext_resource type="FontFile" uid="uid://dmijbnep8lnye" path="res://ttf/IHateComicSans.ttf" id="3_nmx2h"]
+[ext_resource type="Script" path="res://level1.gd" id="1_cshpo"]
+[ext_resource type="Texture2D" uid="uid://bxcbc5qsk405d" path="res://img/classroom/level1/math.png" id="2_jq24g"]
+[ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_o0fe0"]
 [ext_resource type="Texture2D" uid="uid://ny2654qfkyxt" path="res://img/door_sprite/0001.png" id="6_2w71s"]
 [ext_resource type="Texture2D" uid="uid://dpdgunc7krdh8" path="res://img/door_sprite/0003.png" id="7_wwq45"]
 [ext_resource type="Texture2D" uid="uid://ctg3m0v8dt66n" path="res://img/door_sprite/0005.png" id="8_aug38"]
@@ -18,76 +19,52 @@
 [ext_resource type="Texture2D" uid="uid://b7ohdiwfwgyfe" path="res://img/door_sprite/0027.png" id="19_scrw8"]
 [ext_resource type="Texture2D" uid="uid://cg2ondtvdkj2g" path="res://img/door_sprite/0029.png" id="20_r34k4"]
 
-[sub_resource type="GDScript" id="GDScript_hqve4"]
-script/source = "extends Node2D
+[sub_resource type="Animation" id="Animation_bnfq3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/AnimatedScene:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
-var group: ButtonGroup
+[sub_resource type="Animation" id="Animation_udo73"]
+resource_name = "move_to_blackboard"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/AnimatedScene:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.24616, 1.24616)]
+}
 
-var right_answer = Questions.current().answers[0]
-# Called when the node enters the scene tree for the first time.
-func _ready():
-   
-	$Question.set(\"text\", Questions.current().question)
-	
-	var answers = Questions.current().answers;
-	answers.shuffle()
-	
-	$Answer1.set(\"text\",  answers[0])
-	$Answer2.set(\"text\",  answers[1])
-	$Answer3.set(\"text\",  answers[2])
-	
-	$Answer1.pressed.connect(self.answer1_pressed)
-	$Answer2.pressed.connect(self.answer2_pressed)
-	$Answer3.pressed.connect(self.answer3_pressed)
-	
-		
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qpxhq"]
+_data = {
+"RESET": SubResource("Animation_bnfq3"),
+"move_to_blackboard": SubResource("Animation_udo73")
+}
 
-func answer1_pressed():
-	test_answer($Answer1, $Answer1_colors)    
-
-func answer2_pressed():
-	test_answer($Answer2, $Answer2_colors)    
-
-func answer3_pressed():
-	test_answer($Answer3, $Answer3_colors)    
-
-
-func test_answer(button: Button, button_color: ColorRect): 
-	var color = button_color.color
-  
-if (button.get(\"text\") == right_answer):
-	#button.set_theme_stylebox(\"normal\", \"StyleBoxFlat\").bg_color = Color(\"#bada55\")
-	button_color.color = Color(0, 0.5, 0, 1)
-	$Door.play()
-	await $Door.animation_finished
-	button_color.color = color
-	Global.question = Global.question + 1
-	if Global.question < Questions.size():
-	Transition.change_scene(\"res://level1.tscn\")
-	else:
-	  Global.question = 0
-	  Transition.change_scene(\"res://level_finished.tscn\")  
-  else: 
-	button_color.color = Color(0.7, 0, 0, 1)
-	$Timer.start()
-	await $Timer.timeout
-	button_color.color = color
-	#button.get_theme_stylebox(\"normal\",  \"StyleBoxFlat\").bg_color = Color(\"#000000\")
-	# button.set(\"custom_styles/normal\").bg_color = Color(\"#000000\")
-
-
-func _on_button_pressed():
-  Global.question = 0
-  Transition.change_scene(\"res://main.tscn\")
-"
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cmj85"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2tyta"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd4kb"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_26cmn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qagh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7pa3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i0ksj"]
 animations = [{
@@ -142,98 +119,131 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7pa3"]
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_cshpo")
 
-[node name="level1" type="Node2D"]
-script = SubResource("GDScript_hqve4")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qpxhq")
+}
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(640, 360)
-scale = Vector2(0.333, 0.333)
-texture = ExtResource("2_wgaoh")
+[node name="AnimatedScene" type="Control" parent="AnimationPlayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1920.0
+offset_top = -1080.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1920, 1080)
 metadata/_edit_lock_ = true
 
-[node name="MainMenu" type="Button" parent="."]
-offset_left = 956.0
-offset_top = 164.0
-offset_right = 1041.0
-offset_bottom = 194.0
+[node name="Background" type="Sprite2D" parent="AnimationPlayer/AnimatedScene"]
+position = Vector2(1920, 1080)
+texture = ExtResource("2_jq24g")
+metadata/_edit_lock_ = true
+
+[node name="MainMenu" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 2872.0
+offset_top = 492.0
+offset_right = 3124.0
+offset_bottom = 582.0
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxEmpty_cmj85")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2tyta")
+metadata/_edit_lock_ = true
 
-[node name="Answer1_colors" type="ColorRect" parent="."]
-offset_left = 382.0
-offset_top = 350.0
-offset_right = 528.0
-offset_bottom = 487.0
-color = Color(0.678431, 0, 0, 0)
-
-[node name="Answer2_colors" type="ColorRect" parent="."]
-offset_left = 550.0
-offset_top = 366.0
-offset_right = 696.0
-offset_bottom = 504.0
+[node name="Answer1_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 1143.0
+offset_top = 1097.0
+offset_right = 1582.0
+offset_bottom = 1509.0
 color = Color(0.678431, 0, 0, 0)
 metadata/_edit_lock_ = true
 
-[node name="Answer3_colors" type="ColorRect" parent="."]
-offset_left = 718.0
-offset_top = 350.0
-offset_right = 862.0
-offset_bottom = 485.0
+[node name="Answer2_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 1651.0
+offset_top = 1099.0
+offset_right = 2085.0
+offset_bottom = 1511.0
 color = Color(0.678431, 0, 0, 0)
+metadata/_edit_lock_ = true
 
-[node name="Answer1" type="Button" parent="."]
-offset_left = 380.0
-offset_top = 366.0
-offset_right = 525.0
-offset_bottom = 504.0
-theme_override_fonts/font = ExtResource("3_nmx2h")
-theme_override_font_sizes/font_size = 32
+[node name="Answer3_colors" type="ColorRect" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 2153.0
+offset_top = 1100.0
+offset_right = 2591.0
+offset_bottom = 1512.0
+color = Color(0.678431, 0, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="Answer1" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 1143.0
+offset_top = 1098.0
+offset_right = 1578.0
+offset_bottom = 1511.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_wd4kb")
 icon = SubResource("ViewportTexture_26cmn")
+clip_text = true
 metadata/_edit_lock_ = true
 
-[node name="Answer2" type="Button" parent="."]
-offset_left = 550.0
-offset_top = 349.0
-offset_right = 694.0
-offset_bottom = 487.0
-theme_override_fonts/font = ExtResource("3_nmx2h")
-theme_override_font_sizes/font_size = 32
+[node name="Answer2" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 1651.0
+offset_top = 1097.0
+offset_right = 2083.0
+offset_bottom = 1510.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5qagh")
+clip_text = true
 metadata/_edit_lock_ = true
 
-[node name="Question" type="Label" parent="."]
-offset_left = 359.0
-offset_top = 93.0
-offset_right = 880.0
-offset_bottom = 343.0
-theme_override_fonts/font = ExtResource("3_nmx2h")
-theme_override_font_sizes/font_size = 28
+[node name="Answer3" type="Button" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 2156.0
+offset_top = 1098.0
+offset_right = 2590.0
+offset_bottom = 1509.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v7pa3")
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Question" type="Label" parent="AnimationPlayer/AnimatedScene"]
+layout_mode = 0
+offset_left = 1075.0
+offset_top = 280.0
+offset_right = 2638.0
+offset_bottom = 1029.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_lock_ = true
 
-[node name="Door" type="AnimatedSprite2D" parent="."]
-position = Vector2(997.4, 423.15)
-scale = Vector2(0.265926, 0.262656)
+[node name="Door" type="AnimatedSprite2D" parent="AnimationPlayer/AnimatedScene"]
+position = Vector2(2991, 1251.56)
+scale = Vector2(0.781482, 0.781482)
 sprite_frames = SubResource("SpriteFrames_i0ksj")
 speed_scale = 2.0
+metadata/_edit_lock_ = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
 
-[node name="Answer3" type="Button" parent="."]
-offset_left = 719.0
-offset_top = 366.0
-offset_right = 864.0
-offset_bottom = 504.0
-theme_override_fonts/font = ExtResource("3_nmx2h")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxEmpty_v7pa3")
-metadata/_edit_lock_ = true
-
-[connection signal="pressed" from="MainMenu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="AnimationPlayer/AnimatedScene/MainMenu" to="." method="_on_button_pressed"]

@@ -30,24 +30,24 @@ Mängu oluliste muudatuste korral on lisatud [binary](https://github.com/tluhk/r
 Kui on soov kasutada lähtekoodi, siis tuleks [Mina tean](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/MinaTean/) kaust alla laadida ning avada Godot 4.0 mängumootoris, mille saab vajadusel alla laadida [Godot kodulehelt](https://godotengine.org/).
 
 ## Disain
-Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/DisainiPlaan.md)
+Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](/docs/DisainiPlaan.md)
 
 ## Koosolekud
-Grupi koosolekute [memod](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md)<br>
+Grupi koosolekute [memod](/docs/Koosolekud.md)<br>
 Koosolekute lühiülevaade:
-- **[26.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#26032023) koosolek** <br>
+- **[26.03.2023](/docs/Koosolekud.md#26032023) koosolek** <br>
   **Kestus: 10.30 - 11.40** <br>
   - juhendajatelt saadud tagasiside ja sellest tulenevad tegevused;<br>
   - järgmise iteratsiooni plaan<br>
   - ülesannete läbivaatamine (_refinement_), kirjelduste täpsustamine, vastutajate ja tähtaegade määramine;<br>
   - järgmine koosolek 02.04 kell 10:00 <br>  
-- **[19.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#19032023) koosolek**<br>
+- **[19.03.2023](/docs/Koosolekud.md#19032023) koosolek**<br>
 **Kestus: 20.00 - 21.10**<br>
   - eelnenud perioodi ülevaade ja tehtud tööd;<br>
   - Githubi uue exe lisamine;<br>
   - mängule eestikeelne nimi;<br>
   - Igaühel praktikapäevik täidetud 22.03 kell 19:00<br>
-- **[05.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#05032023) koosolek** <br>
+- **[05.03.2023](/docs/Koosolekud.md#05032023) koosolek** <br>
 **Kestus: 10.00 - 11.30** <br>
   - eelnenud perioodi ülevaade ja tehtud tööd
   - tegevuskava ülevaatamine
@@ -59,7 +59,7 @@ Koosolekute lühiülevaade:
   - Kasutame mängumootorina Godot<br>
   - Mäng saab olema 2D<br>
   - Järgmine koosolek 18.03 kell 10:00 (plaan B: 21.03 kell 18:00)<br>
-- **[23.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#23022023) koosolek**<br>
+- **[23.02.2023](/docs/Koosolekud.md#23022023) koosolek**<br>
 **Kestus: 11.30 - 12.45** <br>
    Koosoleku teemad:<br>
    - Projekti todo list ülevaatus. <br>

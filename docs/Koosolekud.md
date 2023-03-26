@@ -41,12 +41,12 @@ Arendus:
 <br>
 Disain:
 <br>
-- [Ekraani suurus](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518095)
-- [Kolli pilt uksele](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925672)
-- [Vastamiste eest premeerimine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913596)
-- [Progressi kuvamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913167)
-- [Heli vaigistamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518132)
-- [Lõpukuva](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22594703)
+- [Ekraani suurus](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518095)<br>
+- [Kolli pilt uksele](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23925672)<br>
+- [Vastamiste eest premeerimine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913596)<br>
+- [Progressi kuvamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23913167)<br>
+- [Heli vaigistamine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518132)<br>
+- [Lõpukuva](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22594703)<br>
 - [Heli loomine](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=22595016)
 <br>
 <br>

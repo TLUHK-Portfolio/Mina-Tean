@@ -69,7 +69,7 @@ Koosolekute lühiülevaade:
    - Mängus esinevate küsimuste temaatika arutlus:<br>
     Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks <br>
    - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
-- **[18.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#18022023) koosolek**<br>
+- **[18.02.2023](/docs/Koosolekud.md#18022023) koosolek**<br>
 **Kestus: 14.00 - 15.00** <br>
   OTSUS:<br> 
   - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00<br> 

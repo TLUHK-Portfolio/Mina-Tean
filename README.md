@@ -35,26 +35,20 @@ Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](https://github.com/t
 ## Koosolekud
 Grupi koosolekute [memod](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md)<br>
 Koosolekute lühiülevaade:
-<ul>
-  <li>
-  <strong>[26.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#26032023) koosolek</strong> <br>
-  <strong>Kestus: 10.30 - 11.40</strong> <br>
+- **[26.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#26032023) koosolek** <br>
+  **Kestus: 10.30 - 11.40** <br>
   - juhendajatelt saadud tagasiside ja sellest tulenevad tegevused;<br>
   - järgmise iteratsiooni plaan<br>
   - ülesannete läbivaatamine (_refinement_), kirjelduste täpsustamine, vastutajate ja tähtaegade määramine;<br>
   - järgmine koosolek 02.04 kell 10:00 <br>  
-  </li>
-  <li>
-  <strong>[19.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#19032023) koosolek</strong> <br>
-  <strong>Kestus: 20.00 - 21.10</strong> <br>
+- **[19.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#19032023) koosolek**<br>
+**Kestus: 20.00 - 21.10**<br>
   - eelnenud perioodi ülevaade ja tehtud tööd;<br>
   - Githubi uue exe lisamine;<br>
   - mängule eestikeelne nimi;<br>
   - Igaühel praktikapäevik täidetud 22.03 kell 19:00<br>
-  </li>
-  <li>
-  <strong>[05.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#05032023) koosolek</strong> <br>
-  <strong>Kestus: 10.00 - 11.30</strong> <br>
+- **[05.03.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#05032023) koosolek** <br>
+**Kestus: 10.00 - 11.30** <br>
   - eelnenud perioodi ülevaade ja tehtud tööd
   - tegevuskava ülevaatamine
   - võimalike riskide analüüs ja hindamine
@@ -65,10 +59,8 @@ Koosolekute lühiülevaade:
   - Kasutame mängumootorina Godot<br>
   - Mäng saab olema 2D<br>
   - Järgmine koosolek 18.03 kell 10:00 (plaan B: 21.03 kell 18:00)<br>
-  </li>
-  <li>
-   <strong>[23.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#23022023) koosolek</strong><br>
-   <strong>Kestus: 11.30 - 12.45</strong> <br>
+- **[23.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#23022023) koosolek**<br>
+**Kestus: 11.30 - 12.45** <br>
    Koosoleku teemad:<br>
    - Projekti todo list ülevaatus. <br>
    - Uute ülesannete jagamine. <br>
@@ -77,15 +69,14 @@ Koosolekute lühiülevaade:
    - Mängus esinevate küsimuste temaatika arutlus:<br>
     Vastuste järgi saab mängija teada, mis valdkonnas tal kõige paremini läks <br>
    - Mängu mootori arutlus. 3D või 2D. Jääme pigem 2D juurde.<br>
-  </li>
-  <li><strong>[18.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#18022023) koosolek</strong> - ülevaade, millega grupiliikmed on tegelenud ja mida on veel vaja teha (vastutajate määramine) <br>
+- **[18.02.2023](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Koosolekud.md#18022023) koosolek**<br>
+**Kestus: 14.00 - 15.00** <br>
   OTSUS:<br> 
   - Igaühel praktikapäevik täidetud 21.veebruar kell 19:00<br> 
   - Kasutame mängumootorina Unityt või Godot<br>
   - Disaini esialgne kirjeldus Siirilt, tähtaeg 21.veebruar kell 19:00 <br>
   - Järgmine koosolek 05.märts kell 10:00<br>
-  </li>
-</ul>
+
 
 ## Mängu valmimine
 Mängu loomist alustati 10. veebruaril 2023 ning valmimise tähtajaks on 24. mai 2023. 

@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhy4oks86n0de"]
+[gd_scene load_steps=8 format=3 uid="uid://dhy4oks86n0de"]
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
 [ext_resource type="StyleBox" uid="uid://bco8numa0fc82" path="res://styles/blackboard_green.tres" id="3_l5nbd"]
+[ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="4_fluml"]
+[ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="5_y2sw2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gbsvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ml7vn"]
 
 [node name="LevelFinished" type="Node2D"]
 script = ExtResource("1_l3p1g")
@@ -35,4 +41,40 @@ theme_override_fonts/font = ExtResource("2_hrjd1")
 theme_override_font_sizes/font_size = 128
 text = "Õnnitlen, said läbi!!!"
 
+[node name="Sound_off" type="Button" parent="."]
+top_level = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -236.0
+offset_right = -146.0
+offset_bottom = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gbsvj")
+icon = ExtResource("4_fluml")
+
+[node name="Sound_on" type="Button" parent="."]
+top_level = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -236.0
+offset_right = -146.0
+offset_bottom = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ml7vn")
+icon = ExtResource("5_y2sw2")
+
 [connection signal="pressed" from="ColorRect/ToMainMenu" to="." method="_on_to_main_menu_pressed"]
+[connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
+[connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]

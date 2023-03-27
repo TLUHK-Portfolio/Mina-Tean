@@ -22,7 +22,6 @@ func read_questions():
 
 func prepare():
     var classrooms = levels[Global.level]
-    print(classrooms)
     for cls in classrooms:  
         classrooms[cls].questions.shuffle()
         for i in questions_from_class:

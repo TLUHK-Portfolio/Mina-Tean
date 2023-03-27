@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cdy1djfjbjlnq"]
+[gd_scene load_steps=32 format=3 uid="uid://cdy1djfjbjlnq"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_cshpo"]
 [ext_resource type="Texture2D" uid="uid://bxcbc5qsk405d" path="res://img/classroom/level1/math.png" id="2_jq24g"]
@@ -16,7 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://no4gyu1l1aa0" path="res://img/door_sprite/0021.png" id="16_wvw7r"]
 [ext_resource type="Texture2D" uid="uid://cy7xkxxef1auc" path="res://img/door_sprite/0023.png" id="17_ctjmm"]
 [ext_resource type="Texture2D" uid="uid://c8p8dfyldooj5" path="res://img/door_sprite/0025.png" id="18_stvvp"]
+[ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="19_juorv"]
 [ext_resource type="Texture2D" uid="uid://b7ohdiwfwgyfe" path="res://img/door_sprite/0027.png" id="19_scrw8"]
+[ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="20_173yw"]
 [ext_resource type="Texture2D" uid="uid://cg2ondtvdkj2g" path="res://img/door_sprite/0029.png" id="20_r34k4"]
 
 [sub_resource type="Animation" id="Animation_bnfq3"]
@@ -119,8 +121,16 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fabrv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gx23d"]
+
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_cshpo")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -191,11 +201,21 @@ offset_left = 1143.0
 offset_top = 1098.0
 offset_right = 1578.0
 offset_bottom = 1511.0
-theme_override_fonts/font = ExtResource("3_o0fe0")
-theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_wd4kb")
 icon = SubResource("ViewportTexture_26cmn")
 clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Answer1_label" type="Label" parent="AnimationPlayer/AnimatedScene/Answer1"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 434.0
+offset_bottom = 413.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 metadata/_edit_lock_ = true
 
 [node name="Answer2" type="Button" parent="AnimationPlayer/AnimatedScene"]
@@ -204,10 +224,19 @@ offset_left = 1651.0
 offset_top = 1097.0
 offset_right = 2083.0
 offset_bottom = 1510.0
-theme_override_fonts/font = ExtResource("3_o0fe0")
-theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5qagh")
 clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Answer2_label" type="Label" parent="AnimationPlayer/AnimatedScene/Answer2"]
+layout_mode = 0
+offset_right = 435.0
+offset_bottom = 412.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 metadata/_edit_lock_ = true
 
 [node name="Answer3" type="Button" parent="AnimationPlayer/AnimatedScene"]
@@ -216,10 +245,19 @@ offset_left = 2156.0
 offset_top = 1098.0
 offset_right = 2590.0
 offset_bottom = 1509.0
-theme_override_fonts/font = ExtResource("3_o0fe0")
-theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_v7pa3")
 clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Answer3_label" type="Label" parent="AnimationPlayer/AnimatedScene/Answer3"]
+layout_mode = 0
+offset_right = 433.0
+offset_bottom = 410.0
+theme_override_fonts/font = ExtResource("3_o0fe0")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 metadata/_edit_lock_ = true
 
 [node name="Question" type="Label" parent="AnimationPlayer/AnimatedScene"]
@@ -242,8 +280,40 @@ sprite_frames = SubResource("SpriteFrames_i0ksj")
 speed_scale = 2.0
 metadata/_edit_lock_ = true
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
-one_shot = true
+[node name="Sound_off" type="Button" parent="."]
+top_level = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -236.0
+offset_right = -146.0
+offset_bottom = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fabrv")
+icon = ExtResource("19_juorv")
+
+[node name="Sound_on" type="Button" parent="."]
+top_level = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -236.0
+offset_right = -146.0
+offset_bottom = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gx23d")
+icon = ExtResource("20_173yw")
 
 [connection signal="pressed" from="AnimationPlayer/AnimatedScene/MainMenu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
+[connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]

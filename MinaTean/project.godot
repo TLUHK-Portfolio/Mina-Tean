@@ -18,7 +18,8 @@ config/icon="res://img/icon.png"
 
 [autoload]
 
-BackgroundMusic="*res://background_music.tscn"
+BackgroundMusicPlayer="*res://background_music.tscn"
+BackgroundMusic="*res://background_music.gd"
 Transition="*res://transition.tscn"
 Questions="*res://read_questions.gd"
 Global="*res://global.gd"

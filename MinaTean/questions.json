@@ -142,7 +142,7 @@
       "math": {
         "questions": [
           {
-            "question": "Kes on kõige pikem",
+            "question": "Kes on kõige pikem?",
             "answers": ["Rasmus 1m 34cm", "Liis 1m 27 cm", "Siim 1m 30 cm"]
           },
           {

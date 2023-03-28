@@ -31,9 +31,9 @@ func _on_level1_pressed():
 
 
 func _on_level_2_pressed():
-    #Global.level = 1
-    #Transition.change_scene("res://level1.tscn")
-    pass
+    Global.level = 1
+    Questions.prepare()
+    Transition.change_scene("res://level1.tscn")
     
 
 

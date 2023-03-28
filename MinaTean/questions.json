@@ -248,23 +248,23 @@
           {
             "question": "See on kitsas ja pikk. Vesi voolab.",
             "answers": ["jõgi", "meri", "järv"]
-          }
+          },
           {
             "question": "Milline neist on pärit põllult?",
             "answers": ["porgand", "sai ", "kohuke"]
-          }
+          },
           {
             "question": "Kes neist ei ela mullas?",
             "answers": ["liblikas", "kakand", "vihmauss"]
-          }
+          },
           {
             "question": "Millistes tingimustes meeldib taimedel kasvada?",
             "answers": ["valges", "pimedas", "külmas"]
-          }
+          },
           {
             "question": "Kes neist ei ole liblikas?",
             "answers": ["pääsuke", "pääsusaba", "päevapaabusilm"]
-          }
+          },
           {
             "question": "Kes neist ei ole kala?",
             "answers": ["röövik", "haug", "ahven"]

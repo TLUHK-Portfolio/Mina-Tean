@@ -39,8 +39,12 @@ func test_answer(label: Label, button_color: ColorRect):
   
     if (label.get("text") == right_answer):
         button_color.color = Color(0, 0.5, 0, 1)
+        $AnimationPlayer/AnimatedScene/Door_closed.visible = false
+        $AnimationPlayer/AnimatedScene/Door.visible = true
         $AnimationPlayer/AnimatedScene/Door.play()
         await $AnimationPlayer/AnimatedScene/Door.animation_finished
+        #$AnimationPlayer/AnimatedScene/Door_closed.visible = true
+        #$AnimationPlayer/AnimatedScene/Door.visible = false
         button_color.color = color
         Global.question = Global.question + 1
         if Global.question < Questions.size():
@@ -51,8 +55,12 @@ func test_answer(label: Label, button_color: ColorRect):
     else:
         Global.wrong_answers = Global.wrong_answers + 1        
         button_color.color = Color(0.7, 0, 0, 1)
-        $Timer.start()
-        await $Timer.timeout
+        $AnimationPlayer/AnimatedScene/Door_closed.visible = false
+        $AnimationPlayer/AnimatedScene/Ghost.visible = true
+        $AnimationPlayer/AnimatedScene/Ghost.play()
+        await $AnimationPlayer/AnimatedScene/Ghost.animation_finished
+        $AnimationPlayer/AnimatedScene/Door_closed.visible = true
+        $AnimationPlayer/AnimatedScene/Ghost.visible = false
         button_color.color = color
         #button.get_theme_stylebox("normal",  "StyleBoxFlat").bg_color = Color("#000000")
         # button.set("custom_styles/normal").bg_color = Color("#000000")

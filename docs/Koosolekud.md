@@ -8,6 +8,37 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 02.04.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:10
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+1. Siiri:  koll ukse juurde, heli vaigistav nupp; reeglid avakuvale; alustas lõpuekraani koostamisega - seal on vaja mõelda veel, kuidas kuvada vastuseid teemade kaupa;
+2. Mario: progressi kuvamine ja auhinnad vastuste eest; ühendas need kaks ülesannet, et auhind oleks ühtlasi ka progressi indikaator; proovis neid paigutada erinevatesse kohtadesse;
+3. Andrus: ekraan suuremaks; teksti murdmine nuppudele;
+4. Riina: tegin release 3 parandused ära (eelkõige linkimised ja koosolekute info); lisasin puuduolevad küsimused ja vastused (nüüd on meil kõik küsimused ja vastused mängu olemas 1. ja 2. taseme jaoks); uurisin suurtähtede kasutamise kohta ja leidsin, et meie mängu jaoks ei ole see vajalik; testisin rakendust; lisasin ülesandeid juurde nii disainile kui arendusele;
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Igaühel [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues) täidetud jooksvalt, tähtaeg 12.04.2023  kell 19:00.
+2. Riina testib karikaid - kas lapsed saavad selle tähendusest aru (kuld hea, hõbe kehva)?
+3. Siiri uurib tagasisidet mängu kohta valdkonnas tegustevalt tuttavalt (hariduslikud mängu lastele)
+4. Hetkel läks [mängu reeglite](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=23518143) ülesanne backlogi, kuna peame veel uurima ja tesitma, mis oleks parim lahendus ja kuidas seda mängus rakendada soovime.
+5. Jätkame pooleliolevate ülesannetega, hoiame Githubi ülesannete logi ajakohasena (tehtud tööd on Done tulbas jne) ja võtame ToDo tulbast uusi ülesandeid.
+6. Järgmine koosolek 02.04 kell 10:00. <br> 
+
+
 ## 26.03.2023
 
 ### Osalejad

@@ -2,6 +2,12 @@ extends Node2D
 
 var right_answer = ""
 
+var gold_cup = load("res://img/cups/gold.png")
+var silver_cup = load("res://img/cups/silver.png")
+var bronze_cup = load("res://img/cups/bronze.png")
+
+var attempts = 3
+
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
@@ -10,20 +16,19 @@ func _ready():
       $Sound_off.visible = false
   else: 
       $Sound_on.visible = true
-  
          
   fill_answer_fields()
-  #var texture = load("res://img/classroom/level1/" + Questions.current().classroom + ".png")
-  #$AnimationPlayer/AnimatedScene/Background.texture = texture
+  show_cups()
   
-    
   $AnimationPlayer/AnimatedScene/Answer1.pressed.connect(self.answer1_pressed)
   $AnimationPlayer/AnimatedScene/Answer2.pressed.connect(self.answer2_pressed)
   $AnimationPlayer/AnimatedScene/Answer3.pressed.connect(self.answer3_pressed)
-  
   disable_buttons() 
+  
+
   $AnimationPlayer.play("move_to_blackboard")
   await $AnimationPlayer.animation_finished
+  
   enable_buttons()          
 
 func answer1_pressed():
@@ -37,16 +42,21 @@ func answer3_pressed():
 
 
 func test_answer(label: Label, button_color: ColorRect): 
-    var color = button_color.color
+    #var color = button_color.color
   
     if (label.get("text") == right_answer):
         button_color.color = Color(0, 0.5, 0, 1)
         disable_buttons()
+        
+        Global.level_results[Global.question] = attempts
+        Global.results_by_classroom[Questions.current().classroom].append(attempts)
+        show_cups()
+        
         $AnimationPlayer/AnimatedScene/Door_closed.visible = false
         $AnimationPlayer/AnimatedScene/Door.visible = true
         $AnimationPlayer/AnimatedScene/Door.play()
         await $AnimationPlayer/AnimatedScene/Door.animation_finished 
-        button_color.color = color
+        #button_color.color = color
         Global.question = Global.question + 1
         if Global.question < Questions.size():
             Transition.change_scene("res://level1.tscn")
@@ -54,10 +64,10 @@ func test_answer(label: Label, button_color: ColorRect):
             Global.question = 0
             Transition.change_scene("res://level_finished.tscn")  
     else:
-        Global.wrong_answers = Global.wrong_answers + 1        
+        attempts = attempts - 1
         button_color.color = Color(0.7, 0, 0, 1)
         play_ghost_animation()
-        button_color.color = color
+        #button_color.color = color
         #button.get_theme_stylebox("normal",  "StyleBoxFlat").bg_color = Color("#000000")
         # button.set("custom_styles/normal").bg_color = Color("#000000")
 
@@ -110,3 +120,16 @@ func enable_buttons():
     $AnimationPlayer/AnimatedScene/Answer1.disabled = false
     $AnimationPlayer/AnimatedScene/Answer2.disabled = false
     $AnimationPlayer/AnimatedScene/Answer3.disabled = false
+    
+func show_cups():
+    var cups = $AnimationPlayer/AnimatedScene/Cups
+    
+    for i in Global.NUM_OF_QUESTIONS:
+        match Global.level_results[i]:
+            1:
+                cups.get_child(i).set("texture", bronze_cup)
+            2:
+                cups.get_child(i).set("texture", silver_cup)
+            3:
+                cups.get_child(i).set("texture", gold_cup)
+                       

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhy4oks86n0de"]
+[gd_scene load_steps=11 format=3 uid="uid://dhy4oks86n0de"]
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
@@ -11,6 +11,10 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ml7vn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_af17a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yoxel"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8wid8"]
 
 [node name="LevelFinished" type="Node2D"]
 script = ExtResource("1_l3p1g")
@@ -139,6 +143,22 @@ theme_override_fonts/font = ExtResource("2_hrjd1")
 theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxEmpty_af17a")
 
+[node name="ToNextLevel" type="Button" parent="."]
+offset_left = 1772.0
+offset_top = 1714.0
+offset_right = 2084.0
+offset_bottom = 2021.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yoxel")
+
+[node name="RepeatLevel" type="Button" parent="."]
+offset_left = 1358.0
+offset_top = 1715.0
+offset_right = 1668.0
+offset_bottom = 2022.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8wid8")
+
 [connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
 [connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]
 [connection signal="pressed" from="ToMainMenu" to="." method="_on_to_main_menu_pressed"]
+[connection signal="pressed" from="ToNextLevel" to="." method="_on_to_next_level_pressed"]
+[connection signal="pressed" from="RepeatLevel" to="." method="_on_repeat_level_pressed"]

@@ -81,7 +81,7 @@
           },
           {
             "question": "Loe sõnu. Mida on üks?",
-           "answers": ["saba", "jalad", "sarved"]
+            "answers": ["saba", "jalad", "sarved"]
           },
           {
             "question": "Millise lause lõppu sobib hüüumärk?",
@@ -128,7 +128,7 @@
             "answers": ["rebane", "põder", "metssiga"]
           },
           {
-            "question": "Mitmes kuu aasta see on? Oktoober",
+            "question": "Mitmes kuu aastas see on? Oktoober",
             "answers": ["10", "7", "5"]
           },
           {
@@ -174,7 +174,7 @@
             "answers": ["22", "13", "27"]
           },
           {
-            "question": "Piimakombinaat saatis toidupangale kokku 50 kg piimatooteid. Juustu oli 31 kg ja kohupiima 15 kg, ülejäänu oli või. Mitu kilogrammi võid saatis kombinaat toidupangale?",
+            "question": "Piimakombinaat saatis toidupangale kokku 59 kg piimatooteid. Juustu oli 31 kg ja kohupiima 15 kg, ülejäänu oli või. Mitu kilogrammi võid saatis kombinaat toidupangale?",
             "answers": ["13", "7", "15"]
           },
           {

@@ -2,7 +2,7 @@ extends Node
 
 var topic = ""
 var levels
-var questions = []
+var questions
 var questions_from_class = 4
 
 func read_questions():
@@ -21,8 +21,12 @@ func read_questions():
   return
 
 func prepare():
+    Global.init_results()
+    questions = []
+    Global.question = 0
     var classrooms = levels[Global.level]
-    for cls in classrooms:  
+    for cls in classrooms:
+        Global.results_by_classroom[cls] = []  
         classrooms[cls].questions.shuffle()
         for i in questions_from_class:
           var new_question = classrooms[cls].questions[i]

@@ -46,3 +46,19 @@ func show_cups(classroom, cups):
             3:
               cups.get_child(i).set("texture", gold_cup)
     
+
+
+func _on_to_next_level_pressed():
+    if Global.level < 1:
+        Global.level = Global.level + 1
+        Questions.prepare()
+        Transition.change_scene("res://level1.tscn")
+    else:
+        Transition.change_scene("res://main.tscn")
+    
+   
+
+
+func _on_repeat_level_pressed():
+    Questions.prepare()
+    Transition.change_scene("res://level1.tscn")

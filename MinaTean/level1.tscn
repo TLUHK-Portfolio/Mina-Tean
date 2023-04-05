@@ -372,6 +372,45 @@ scale = Vector2(0.781482, 0.781482)
 texture = ExtResource("6_2w71s")
 metadata/_edit_lock_ = true
 
+[node name="Cups" type="Node2D" parent="AnimationPlayer/AnimatedScene"]
+position = Vector2(1209, 1788)
+
+[node name="Cup1" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(2, 0)
+
+[node name="Cup2" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(123, 0)
+
+[node name="Cup3" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(244, 0)
+
+[node name="Cup4" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(365, 0)
+
+[node name="Cup5" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(485, 0)
+
+[node name="Cup6" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(606, 0)
+
+[node name="Cup7" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(727, 0)
+
+[node name="Cup8" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(848, 0)
+
+[node name="Cup9" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(966, 0)
+
+[node name="Cup10" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(1087, 0)
+
+[node name="Cup11" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(1208, 0)
+
+[node name="Cup12" type="Sprite2D" parent="AnimationPlayer/AnimatedScene/Cups"]
+position = Vector2(1330, 0)
+
 [node name="Sound_off" type="Button" parent="."]
 top_level = true
 anchors_preset = 3

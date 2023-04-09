@@ -10,6 +10,8 @@ func _ready():
       $Sound_off.visible = false
     else: 
       $Sound_on.visible = true
+    
+    $Finished_sound.play()
 
     show_cups("math", $Cups/Math_cups)
     show_cups("nature", $Cups/Nature_cups)

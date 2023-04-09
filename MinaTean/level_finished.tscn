@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dhy4oks86n0de"]
+[gd_scene load_steps=12 format=3 uid="uid://dhy4oks86n0de"]
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
 [ext_resource type="Texture2D" uid="uid://ctbh6hx2abj4i" path="res://img/level_completed.png" id="4_8yq4e"]
 [ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="4_fluml"]
 [ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="5_y2sw2"]
+[ext_resource type="AudioStream" uid="uid://cgieb6fcpxq25" path="res://sound/level_finished.mp3" id="6_udxiw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gbsvj"]
 
@@ -79,7 +80,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_ml7vn")
 icon = ExtResource("5_y2sw2")
 
 [node name="Cups" type="Node2D" parent="."]
-position = Vector2(950, 1030)
+position = Vector2(950, 1180)
 
 [node name="Math_cups" type="Node2D" parent="Cups"]
 
@@ -156,6 +157,10 @@ offset_top = 1715.0
 offset_right = 1668.0
 offset_bottom = 2022.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_8wid8")
+
+[node name="Finished_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_udxiw")
+volume_db = 10.0
 
 [connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
 [connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]

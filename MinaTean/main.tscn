@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://818swap3lqr7"]
+[gd_scene load_steps=14 format=3 uid="uid://818swap3lqr7"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g5x4g"]
 [ext_resource type="Texture2D" uid="uid://2nrp07owdjtu" path="res://img/main_menu.png" id="2_j3ldb"]
@@ -17,8 +17,6 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2bsp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih7ba"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8h0cc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxvgk"]
 
@@ -88,13 +86,6 @@ offset_right = 438.0
 offset_bottom = 384.0
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ih7ba")
-
-[node name="Rules" type="Button" parent="Sprite2D"]
-offset_left = 583.0
-offset_top = -409.0
-offset_right = 815.0
-offset_bottom = -373.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_8h0cc")
 
 [node name="Sound_off" type="Button" parent="."]
 top_level = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cdy1djfjbjlnq"]
+[gd_scene load_steps=53 format=3 uid="uid://cdy1djfjbjlnq"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_cshpo"]
 [ext_resource type="Texture2D" uid="uid://bxcbc5qsk405d" path="res://img/classroom/level1/math.png" id="2_jq24g"]
@@ -38,6 +38,8 @@
 [ext_resource type="Texture2D" uid="uid://cvtoglww7k0ip" path="res://img/ghost_sprite/0030.png" id="34_cye8o"]
 [ext_resource type="Texture2D" uid="uid://cagqjnmvydx5p" path="res://img/ghost_sprite/0032.png" id="35_txuks"]
 [ext_resource type="Texture2D" uid="uid://gh0reav3co6u" path="res://img/ghost_sprite/0034.png" id="36_cgpqn"]
+[ext_resource type="AudioStream" uid="uid://wbddpdrncus1" path="res://sound/right_answer.mp3" id="39_gvetb"]
+[ext_resource type="AudioStream" uid="uid://d0v621quifcuq" path="res://sound/wrong_answer.mp3" id="40_fklag"]
 
 [sub_resource type="Animation" id="Animation_bnfq3"]
 length = 0.001
@@ -444,6 +446,14 @@ grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gx23d")
 icon = ExtResource("20_173yw")
+
+[node name="Right_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("39_gvetb")
+volume_db = 10.0
+
+[node name="Wrong_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("40_fklag")
+volume_db = 10.0
 
 [connection signal="pressed" from="AnimationPlayer/AnimatedScene/MainMenu" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]

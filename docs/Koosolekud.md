@@ -8,6 +8,35 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 09.04.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:10
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+1. Siiri:  lõpukuva tegemine, aga probleem selles, millal kirjutada, milles tubli oled; esilehele poodium karikatega; hoveri nupud (lõpukuva ja avakuva) varjutamisega; 
+2. Mario: karikate riiulid ja karikad - ei läinud väga sujuvalt (koordinaat ja skaala muutusid ning läks aega, et toimima saada); alustas heli tegemist (õige ja vale vastuse heli, lõpukuva fanfaar);
+3. Andrus: karikate kuvamine ja loogika mängus ja lõpukuval; mõnikord tuleb bugi, kui ühe taseme oled läbinud ja kordad sama taset või lähed uuele, siis mõnikord poole pealt hakkab valesti vastuseid andma;
+4. Riina: testimine lasteaias läks hästi - mõned lapsed said lugemisega ise edukalt hakkama ja lahendasid esimese klassi ülesandeid väga heade tulemustega; karikate kuvamine progressi näitamiseks oli kõikidele arusaadav, mõned lapsed teadsid väga täpselt, mis vahe on kuldsel ja pronksist karikal; panin kokku release 4 mustandi;
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Igaühel [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues) täidetud jooksvalt, tähtaeg 12.04.2023  kell 19:00.
+2. Täiendada lõpuekraani ülesannet (#37), kuidas kuvada lõpuekraanil saadud tulemusi tekstina (kas kuvada teksti, kui jah, siis millal ja mida), Riina
+3. Lisada testimise ülesanne vastuste vale kuvamise bugi kohta, Riina
+
+
+
 ## 02.04.2023
 
 ### Osalejad

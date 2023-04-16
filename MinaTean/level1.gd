@@ -14,8 +14,10 @@ func _ready():
   
   if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
       $Sound_off.visible = false
-  else: 
       $Sound_on.visible = true
+  else: 
+      $Sound_off.visible = true
+      $Sound_on.visible = false
          
   fill_answer_fields()
   show_cups()
@@ -32,12 +34,15 @@ func _ready():
   enable_buttons()          
 
 func answer1_pressed():
+    $AnimationPlayer/AnimatedScene/Answer1.pressed.disconnect(self.answer1_pressed)
     test_answer($AnimationPlayer/AnimatedScene/Answer1/Answer1_label, $AnimationPlayer/AnimatedScene/Answer1_colors)    
 
 func answer2_pressed():
+    $AnimationPlayer/AnimatedScene/Answer2.pressed.disconnect(self.answer2_pressed)
     test_answer($AnimationPlayer/AnimatedScene/Answer2/Answer2_label, $AnimationPlayer/AnimatedScene/Answer2_colors)    
 
 func answer3_pressed():
+    $AnimationPlayer/AnimatedScene/Answer3.pressed.disconnect(self.answer3_pressed)
     test_answer($AnimationPlayer/AnimatedScene/Answer3/Answer3_label, $AnimationPlayer/AnimatedScene/Answer3_colors)    
 
 
@@ -48,7 +53,8 @@ func test_answer(label: Label, button_color: ColorRect):
         button_color.color = Color(0, 0.5, 0, 1)
         disable_buttons()
         
-        $Right_sound.play()
+        if $Sound_on.visible == true:
+            $Right_sound.play()
         Global.level_results[Global.question] = attempts
         Global.results_by_classroom[Questions.current().classroom].append(attempts)
         show_cups()
@@ -103,7 +109,8 @@ func _on_sound_off_pressed():
 
 func play_ghost_animation():
     disable_buttons()
-    $Wrong_sound.play()
+    if $Sound_on.visible == true:
+        $Wrong_sound.play()
     $AnimationPlayer/AnimatedScene/Door_closed.visible = false
     $AnimationPlayer/AnimatedScene/Ghost.visible = true
     $AnimationPlayer/AnimatedScene/Ghost.play()

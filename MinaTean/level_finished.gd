@@ -6,16 +6,19 @@ var bronze_cup = load("res://img/cups/bronze.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
+  if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
       $Sound_off.visible = false
-    else: 
       $Sound_on.visible = true
+  else: 
+      $Sound_off.visible = true
+      $Sound_on.visible = false
     
-    $Finished_sound.play()
+  if $Sound_on.visible == true:
+      $Finished_sound.play()
 
-    show_cups("math", $Cups/Math_cups)
-    show_cups("nature", $Cups/Nature_cups)
-    show_cups("language", $Cups/Language_cups)
+  show_cups("math", $Cups/Math_cups)
+  show_cups("nature", $Cups/Nature_cups)
+  show_cups("language", $Cups/Language_cups)
     
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

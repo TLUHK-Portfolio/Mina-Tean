@@ -8,6 +8,39 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 16.04.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Juhendajatelt tagasiside
+
+- Taaskord väga hea töö, aitäh kõigile tehtud töö ja panuse eest!
+- Teeme juurde ühe vale vastuse heli, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25734126)
+
+
+### Järgmise iteratsiooni plaan
+Vaatame üle ülesanded, mis on hetkel skoobis. Lisame ja kirjeldame vajadusel juhendajate ettepanekud ülesannetes.
+<br>
+Arendus: Heli vaigistamisel õige/vale vastuse helid vaikseks, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25195926)
+Arendus: Punkti arvestuse loogika, millega tasemest edasi saab, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=24565206)
+Arendus: Parandus - karikate arvestusel tühi tulemus, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25733794)
+Arendus: Punktiarvestuse viimine koodi, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25734216)
+Disain: Parendus - vale vastuse heli uus versioon, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25734126)
+Disain: Smiled lõpuekraanil, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25753233)
+Disain: esilehe karikad, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25753454)
+Disain: Teise taseme klassiruumid, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25136906)
+Disain: teise taseme klassiruumi detailid, [ülesanne](https://github.com/orgs/tluhk/projects/15/views/1?pane=issue&itemId=25136908)
+
+
 ## 09.04.2023
 
 ### Osalejad

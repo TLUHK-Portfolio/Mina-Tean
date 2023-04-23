@@ -16,10 +16,12 @@ Projekti liikmed:
 Projekti etappide kirjeldamiseks valmis üldine ülevaade [tegevuskavas](https://github.com/tluhk/rif21-MM-praktika-3/blob/master/docs/Tegevuskava.md).
  
 ## Mängu Mina tean! kirjeldus
-Mängu **Mina tean!** käigus peab mängija liikuma ruumides ning edasi pääsemiseks 
-tuleb mängijal lahendada ülesandeid. Sõltuvalt sellest kas vastus on õige või vale,
-avaneb vastav uks, mida mööda saab mängija liikuda järgmise ülesande juurde. 
-Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
+Mängu **Mina tean!** käigus peab mängija liikuma klassiruumides ning edasi pääsemiseks 
+tuleb mängijal lahendada ülesandeid. Mängija valib tahvlilt vastuse kolme 
+vastusevariandi seast. Õige vastuse korral avaneb uks ja mängija saab edasi liikuda
+järgmise ülesande juurde, vale vastuse korral saab mängija uuesti vastata niikaua, kui saab
+õige vastuse. Iga ülesande eest saab karika vastavalt vastavalt sellele, mitmendal
+korral õigesti vastas. Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
 
 ## Kasutatavad tehnoloogiad
 ### Mängumootor

@@ -8,6 +8,31 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 23.04.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+1. Siiri: ämblik, koos võrguga; lõpuekraan ja smiled ning tekstid; esilehele uute karikatega uus poodium; teise taseme avaekraan; 
+2. Mario: karikad eestvaates (Blenderis eestvaates kohe teha ei saanud, pidi Affinitys täiendama); keldri klassiruum teise taseme jaoks; vale vastuse helile erinevad variandid;
+3. Andrus: karikate vea parandus, et ei jääks ilma karikata, kui mitu vastust valida; heli vaigistamine parandatud ja toimib kõikide helidele;
+4. Riina: punktiskoori arvestuse loogika; uute ülesannete kirjeldused;
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Igaühel [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues) täidetud jooksvalt, tähtaeg 25.04.2023  kell 19:00.
+
 ## 16.04.2023
 
 ### Osalejad

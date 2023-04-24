@@ -39,7 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://cagqjnmvydx5p" path="res://img/ghost_sprite/0032.png" id="35_txuks"]
 [ext_resource type="Texture2D" uid="uid://gh0reav3co6u" path="res://img/ghost_sprite/0034.png" id="36_cgpqn"]
 [ext_resource type="AudioStream" uid="uid://wbddpdrncus1" path="res://sound/right_answer.mp3" id="39_gvetb"]
-[ext_resource type="AudioStream" uid="uid://d0v621quifcuq" path="res://sound/wrong_answer.mp3" id="40_fklag"]
+[ext_resource type="AudioStream" uid="uid://dwe3r56hvdgkm" path="res://sound/onenote_higher.mp3" id="40_ekbvq"]
 
 [sub_resource type="Animation" id="Animation_bnfq3"]
 length = 0.001
@@ -452,7 +452,7 @@ stream = ExtResource("39_gvetb")
 volume_db = 10.0
 
 [node name="Wrong_sound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("40_fklag")
+stream = ExtResource("40_ekbvq")
 volume_db = 10.0
 
 [connection signal="pressed" from="AnimationPlayer/AnimatedScene/MainMenu" to="." method="_on_button_pressed"]

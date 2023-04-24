@@ -88,7 +88,7 @@ func fill_answer_fields():
     $AnimationPlayer/AnimatedScene/Answer2/Answer2_label.set("text",  answers[1])
     $AnimationPlayer/AnimatedScene/Answer3/Answer3_label.set("text",  answers[2])
     
-    var texture = load("res://img/classroom/level1/" + Questions.current().classroom + ".png")
+    var texture = load("res://img/classroom/level" + str(Global.level) + "/" + Questions.current().classroom + ".png")
     $AnimationPlayer/AnimatedScene/Background.texture = texture
       
 

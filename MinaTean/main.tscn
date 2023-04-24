@@ -1,10 +1,15 @@
-[gd_scene load_steps=14 format=3 uid="uid://818swap3lqr7"]
+[gd_scene load_steps=15 format=3 uid="uid://818swap3lqr7"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g5x4g"]
 [ext_resource type="Texture2D" uid="uid://2nrp07owdjtu" path="res://img/main_menu.png" id="2_j3ldb"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_32go2"]
 [ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="4_ny4et"]
 [ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="5_ebb7h"]
+[ext_resource type="Texture2D" uid="uid://dpxfkxlciytya" path="res://img/start.png" id="6_nfjoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxvgk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x4ctu"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maxy6"]
 
@@ -18,74 +23,14 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih7ba"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxvgk"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x4ctu"]
-
 [node name="main" type="Node2D"]
 script = ExtResource("1_g5x4g")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(1920, 1080)
 scale = Vector2(2, 2)
 texture = ExtResource("2_j3ldb")
-
-[node name="Level1" type="Button" parent="Sprite2D"]
-layout_direction = 1
-offset_left = -447.0
-offset_top = -127.0
-offset_right = -231.0
-offset_bottom = 89.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/font = ExtResource("3_32go2")
-theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
-
-[node name="Level2" type="Button" parent="Sprite2D"]
-layout_direction = 1
-offset_left = -106.0
-offset_top = -126.0
-offset_right = 108.0
-offset_bottom = 88.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxEmpty_mndou")
-
-[node name="Level3" type="Button" parent="Sprite2D"]
-layout_direction = 1
-offset_left = 229.0
-offset_top = -125.0
-offset_right = 445.0
-offset_bottom = 87.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxEmpty_7jtli")
-
-[node name="Level4" type="Button" parent="Sprite2D"]
-layout_direction = 1
-offset_left = -444.0
-offset_top = 176.0
-offset_right = -232.0
-offset_bottom = 389.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxEmpty_cgp76")
-
-[node name="Level5" type="Button" parent="Sprite2D"]
-offset_left = -105.0
-offset_top = 177.0
-offset_right = 108.0
-offset_bottom = 385.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
-
-[node name="Exit" type="Button" parent="Sprite2D"]
-offset_left = 233.0
-offset_top = 179.0
-offset_right = 438.0
-offset_bottom = 384.0
-theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ih7ba")
+metadata/_edit_lock_ = true
 
 [node name="Sound_off" type="Button" parent="."]
 top_level = true
@@ -103,6 +48,7 @@ grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bxvgk")
 icon = ExtResource("5_ebb7h")
+metadata/_edit_lock_ = true
 
 [node name="Sound_on" type="Button" parent="."]
 top_level = true
@@ -120,9 +66,112 @@ grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x4ctu")
 icon = ExtResource("4_ny4et")
+metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="Sprite2D/Level1" to="." method="_on_level1_pressed"]
-[connection signal="pressed" from="Sprite2D/Level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="Sprite2D/Exit" to="." method="_on_exit_pressed"]
+[node name="Levels" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Level1" type="Button" parent="Levels"]
+visible = false
+clip_contents = true
+layout_direction = 1
+offset_left = 1026.0
+offset_top = 826.0
+offset_right = 1456.0
+offset_bottom = 1264.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_32go2")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
+metadata/_edit_lock_ = true
+
+[node name="Level1_icon" type="Sprite2D" parent="Levels/Level1"]
+visible = false
+show_behind_parent = true
+position = Vector2(218, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nfjoc")
+
+[node name="Level2" type="Button" parent="Levels"]
+visible = false
+layout_direction = 1
+offset_left = 1708.0
+offset_top = 828.0
+offset_right = 2139.0
+offset_bottom = 1258.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mndou")
+
+[node name="Level2_icon" type="Sprite2D" parent="Levels/Level2"]
+visible = false
+show_behind_parent = true
+position = Vector2(216, 290)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nfjoc")
+
+[node name="Level3" type="Button" parent="Levels"]
+visible = false
+layout_direction = 1
+offset_left = 2378.0
+offset_top = 830.0
+offset_right = 2808.0
+offset_bottom = 1261.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7jtli")
+
+[node name="Level3_icon" type="Sprite2D" parent="Levels/Level3"]
+visible = false
+show_behind_parent = true
+position = Vector2(214, 285)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nfjoc")
+
+[node name="Level4" type="Button" parent="Levels"]
+visible = false
+layout_direction = 1
+offset_left = 1032.0
+offset_top = 1432.0
+offset_right = 1459.0
+offset_bottom = 1860.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cgp76")
+
+[node name="Level4_icon" type="Sprite2D" parent="Levels/Level4"]
+visible = false
+show_behind_parent = true
+position = Vector2(212, 273)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nfjoc")
+
+[node name="Level5" type="Button" parent="Levels"]
+visible = false
+offset_left = 1710.0
+offset_top = 1434.0
+offset_right = 2138.0
+offset_bottom = 1857.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
+
+[node name="Level5_icon" type="Sprite2D" parent="Levels/Level5"]
+visible = false
+show_behind_parent = true
+position = Vector2(210, 269)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nfjoc")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 2386.0
+offset_top = 1438.0
+offset_right = 2806.0
+offset_bottom = 1858.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ih7ba")
+
 [connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
 [connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]
+[connection signal="pressed" from="Levels/Level1" to="." method="_on_level1_pressed"]
+[connection signal="pressed" from="Levels/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

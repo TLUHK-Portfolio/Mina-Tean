@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
-[ext_resource type="Texture2D" uid="uid://ctbh6hx2abj4i" path="res://img/level_completed.png" id="4_8yq4e"]
+[ext_resource type="Texture2D" uid="uid://c8fw40b0e5tgi" path="res://img/level_completed.png" id="4_8yq4e"]
 [ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="4_fluml"]
 [ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="5_y2sw2"]
 [ext_resource type="AudioStream" uid="uid://cgieb6fcpxq25" path="res://sound/level_finished.mp3" id="6_udxiw"]
@@ -145,6 +145,7 @@ theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxEmpty_af17a")
 
 [node name="ToNextLevel" type="Button" parent="."]
+visible = false
 offset_left = 1772.0
 offset_top = 1714.0
 offset_right = 2084.0
@@ -161,6 +162,32 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_8wid8")
 [node name="Finished_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_udxiw")
 volume_db = 10.0
+
+[node name="Smileys" type="Node2D" parent="."]
+position = Vector2(950, 1384)
+
+[node name="Math_smiley" type="Sprite2D" parent="Smileys"]
+position = Vector2(280, 40)
+scale = Vector2(2.25, 2.25)
+
+[node name="Nature_smiley" type="Sprite2D" parent="Smileys"]
+position = Vector2(982, 40)
+scale = Vector2(2.25, 2.25)
+
+[node name="Language_smiley" type="Sprite2D" parent="Smileys"]
+position = Vector2(1750, 40)
+scale = Vector2(2.25, 2.25)
+
+[node name="Result_message" type="Node2D" parent="."]
+position = Vector2(2888, 464)
+
+[node name="Smiley" type="Sprite2D" parent="Result_message"]
+position = Vector2(-143, 111)
+scale = Vector2(3, 3)
+
+[node name="Message" type="Sprite2D" parent="Result_message"]
+position = Vector2(-676, 109)
+scale = Vector2(2, 2)
 
 [connection signal="pressed" from="Sound_off" to="." method="_on_sound_off_pressed"]
 [connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]

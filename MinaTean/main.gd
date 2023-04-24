@@ -3,6 +3,7 @@ extends Node2D
 func _init():
     Transition.smooth_start()
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
     if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
@@ -10,9 +11,12 @@ func _ready():
     else: 
       $Sound_on.visible = true
     
+    for i in range(Global.game_results.levels_completed + 1):
+        $Levels.get_child(i).set("visible", true)
+        $Levels.get_child(i).get_child(0).set("visible", true)
+        
     Questions.read_questions()
     # get_node("Label").set("text", Questions.topic)
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # func _process(delta):

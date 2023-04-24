@@ -1,7 +1,7 @@
 [gd_scene load_steps=53 format=3 uid="uid://cdy1djfjbjlnq"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_cshpo"]
-[ext_resource type="Texture2D" uid="uid://bxcbc5qsk405d" path="res://img/classroom/level1/math.png" id="2_jq24g"]
+[ext_resource type="Texture2D" uid="uid://cbkus5rwq7abb" path="res://img/classroom/level1/math.png" id="2_jq24g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="3_o0fe0"]
 [ext_resource type="Texture2D" uid="uid://ny2654qfkyxt" path="res://img/door_sprite/0001.png" id="6_2w71s"]
 [ext_resource type="Texture2D" uid="uid://dpdgunc7krdh8" path="res://img/door_sprite/0003.png" id="7_wwq45"]

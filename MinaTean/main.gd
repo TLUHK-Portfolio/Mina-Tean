@@ -11,7 +11,7 @@ func _ready():
     else: 
       $Sound_on.visible = true
     
-    for i in range(Global.game_results.levels_completed + 1):
+    for i in range(min(Global.game_results.levels_completed + 1, Global.NUM_OF_LEVELS)):
         $Levels.get_child(i).set("visible", true)
         $Levels.get_child(i).get_child(0).set("visible", true)
         

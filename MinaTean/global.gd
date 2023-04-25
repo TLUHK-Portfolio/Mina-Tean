@@ -1,7 +1,7 @@
 extends Node
 
 const NUM_OF_QUESTIONS = 12
-const NUM_OF_LEVELS = 5
+const NUM_OF_LEVELS = 2
 var level = 0
 var question = 0
 

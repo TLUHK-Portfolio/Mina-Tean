@@ -80,7 +80,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_ml7vn")
 icon = ExtResource("5_y2sw2")
 
 [node name="Cups" type="Node2D" parent="."]
-position = Vector2(950, 1180)
+position = Vector2(950, 1170)
 
 [node name="Math_cups" type="Node2D" parent="Cups"]
 
@@ -164,7 +164,7 @@ stream = ExtResource("6_udxiw")
 volume_db = 10.0
 
 [node name="Smileys" type="Node2D" parent="."]
-position = Vector2(950, 1384)
+position = Vector2(950, 1400)
 
 [node name="Math_smiley" type="Sprite2D" parent="Smileys"]
 position = Vector2(280, 40)

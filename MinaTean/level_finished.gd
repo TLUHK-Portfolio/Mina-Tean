@@ -68,15 +68,15 @@ func show_classroom_results(classroom, cups, smiley):
               cups.get_child(i).set("texture", gold_cup)
               classroom_points = classroom_points + 3
 
-        if classroom_bronze_count >= 3:
-            smiley.set("texture", sad_smiley)
-            level_completed = false
+    if classroom_bronze_count >= 3 or classroom_points <= 6:
+        smiley.set("texture", sad_smiley)
+        level_completed = false
+    else:
+        if classroom_points <= 8:
+            smiley.set("texture", neutral_smiley)
         else:
-            if classroom_points <= 8:
-                smiley.set("texture", neutral_smiley)
-            else:
-                smiley.set("texture", happy_smiley)
-    
+            smiley.set("texture", happy_smiley)
+                
 func show_final_result():
     if level_completed and bronze_count < 6:
         $Result_message/Smiley.set("texture", happy_smiley)

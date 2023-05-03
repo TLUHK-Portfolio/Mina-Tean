@@ -8,6 +8,36 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 30.04.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Juhendajatelt tagasiside
+- Juhendajatelt tuli erinevat tagasisidet kasutajaliidese kohta. Vaatame üle ja teeme vajadusel parendused. 
+
+### Järgmise iteratsiooni plaan
+Vaatame üle ülesanded, mis on hetkel skoobis. Lisame ja kirjeldame vajadusel juhendajate ettepanekud ülesannetes.
+<br>
+Disain/arendus: Vari kadunud "alusta mängu" nupult esilehelt;
+Disain/arendus: "Mäng läbi" tekst ära võtta lõpust;
+Disain/arendus: muusika panna taustale ja vastustele eraldi;
+Disain/arendus: lõpuekraani "välju" ja "mängi uuesti" nupud teha erinevaks;
+Disain/arendus: välju nupp viia lõpuekraanil üles paremale (õpetajate toa kohale vms);
+Disain/arendus: "Oled tubli" punane värv asendada millegi neutraalsemaga;
+Disain/arendus: "Exit" nupp ruumi paremini sobituma;
+
+### Kokkulepped, otsused
+1. Järgmine koosolek 07.05 kell 10:00. <br> 
+
 ## 23.04.2023
 
 ### Osalejad

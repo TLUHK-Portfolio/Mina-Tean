@@ -17,12 +17,19 @@ var level_completed = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
   if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
+      $Music_off.visible = false
+      $Music_on.visible = true
+  else: 
+      $Music_off.visible = true
+      $Music_on.visible = false
+  
+  if Global.play_sounds:
       $Sound_off.visible = false
       $Sound_on.visible = true
   else: 
       $Sound_off.visible = true
       $Sound_on.visible = false
-    
+  
   if $Sound_on.visible == true:
       $Finished_sound.play()
 
@@ -38,17 +45,6 @@ func _ready():
 
 func _on_to_main_menu_pressed():
     Transition.change_scene("res://main.tscn")
-
-
-func _on_sound_on_pressed():
-    $Sound_on.visible = false
-    $Sound_off.visible = true
-    BackgroundMusicPlayer.stream_paused = true
- 
-func _on_sound_off_pressed():
-    $Sound_off.visible = false
-    $Sound_on.visible = true
-    BackgroundMusicPlayer.stream_paused = false
 
 func show_classroom_results(classroom, cups, smiley):
     var classroom_bronze_count = 0
@@ -107,3 +103,25 @@ func _on_to_next_level_pressed():
 func _on_repeat_level_pressed():
     Questions.prepare()
     Transition.change_scene("res://level1.tscn")
+
+
+func _on_music_on_pressed():
+    $Music_on.visible = false
+    $Music_off.visible = true
+    BackgroundMusicPlayer.stream_paused = true
+
+func _on_music_off_pressed():
+    $Music_off.visible = false
+    $Music_on.visible = true
+    BackgroundMusicPlayer.stream_paused = false
+
+func _on_sound_on_pressed():
+    $Sound_on.visible = false
+    $Sound_off.visible = true
+    Global.play_sounds = false
+    
+func _on_sound_off_pressed():
+    $Sound_off.visible = false
+    $Sound_on.visible = true
+    Global.play_sounds = true
+    

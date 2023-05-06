@@ -13,12 +13,19 @@ var attempts = 3
 func _ready():
   
   if !BackgroundMusicPlayer.stream_paused and BackgroundMusicPlayer.playing:
+      $Music_off.visible = false
+      $Music_on.visible = true
+  else: 
+      $Music_off.visible = true
+      $Music_on.visible = false
+  
+  if Global.play_sounds:
       $Sound_off.visible = false
       $Sound_on.visible = true
   else: 
       $Sound_off.visible = true
       $Sound_on.visible = false
-         
+       
   fill_answer_fields()
   show_cups()
   
@@ -80,10 +87,10 @@ func test_answer(label: Label, button_color: ColorRect):
 
 func fill_answer_fields():
     $AnimationPlayer/AnimatedScene/Question.set("text", Questions.current().question)
-    var answers = Questions.current().answers;
+    var answers = []
+    answers.append_array(Questions.current().answers)
     right_answer = answers[0]
     answers.shuffle()
-    
     $AnimationPlayer/AnimatedScene/Answer1/Answer1_label.set("text",  answers[0])
     $AnimationPlayer/AnimatedScene/Answer2/Answer2_label.set("text",  answers[1])
     $AnimationPlayer/AnimatedScene/Answer3/Answer3_label.set("text",  answers[2])
@@ -92,20 +99,9 @@ func fill_answer_fields():
     $AnimationPlayer/AnimatedScene/Background.texture = texture
       
 
-func _on_button_pressed():
+func _on_main_menu_pressed():
     Global.question = 0
     Transition.change_scene("res://main.tscn")
-
-
-func _on_sound_on_pressed():
-    $Sound_on.visible = false
-    $Sound_off.visible = true
-    BackgroundMusicPlayer.stream_paused = true
-
-func _on_sound_off_pressed():
-    $Sound_off.visible = false
-    $Sound_on.visible = true
-    BackgroundMusicPlayer.stream_paused = false
 
 func play_ghost_animation():
     disable_buttons()
@@ -141,4 +137,23 @@ func show_cups():
                 cups.get_child(i).set("texture", silver_cup)
             3:
                 cups.get_child(i).set("texture", gold_cup)
-                       
+
+func _on_music_on_pressed():
+    $Music_on.visible = false
+    $Music_off.visible = true
+    BackgroundMusicPlayer.stream_paused = true
+                           
+func _on_music_off_pressed():
+    $Music_off.visible = false
+    $Music_on.visible = true
+    BackgroundMusicPlayer.stream_paused = false
+
+func _on_sound_on_pressed():
+    $Sound_on.visible = false
+    $Sound_off.visible = true
+    Global.play_sounds = false
+    
+func _on_sound_off_pressed():
+    $Sound_off.visible = false
+    $Sound_on.visible = true
+    Global.play_sounds = true

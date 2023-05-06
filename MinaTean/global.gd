@@ -11,7 +11,10 @@ var wrong_answers = 0
 var level_results = []
 var results_by_classroom = {}
 
+var play_sounds = true
+
 var game_results = {"levels_completed": 0, "level_results": []}
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

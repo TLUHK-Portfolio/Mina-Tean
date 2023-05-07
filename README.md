@@ -37,6 +37,11 @@ Disaini kirjeldamiseks on valminud esmane [dokumentatsioon](/docs/DisainiPlaan.m
 ## Koosolekud
 Grupi koosolekute [memod](/docs/Koosolekud.md)<br>
 Koosolekute lühiülevaade:
+- **[07.05.2023](/docs/Koosolekud.md#07052023) koosolek** <br>
+  **Kestus: 10.00 - 11.00** <br>
+  - Nädala tegevused - mida grupi liikmed tegid ja kas on probleeme;<br>
+  - ülesannete täiendamine ja lisamine; <br> 
+  - järgmine koosolek 14.07 kell 10:00 <br>
 - **[30.04.2023](/docs/Koosolekud.md#16042023) koosolek** <br>
   **Kestus: 10.00 - 11.00** <br>
   - juhendajatelt saadud tagasiside ja sellest tulenevad tegevused;<br>
@@ -46,7 +51,7 @@ Koosolekute lühiülevaade:
 - **[25.04.2023](/docs/Koosolekud.md#25042023) koosolek** <br>
   **Kestus: 10.00 - 11.00** <br>
   - Nädala tegevused - mida grupi liikmed tegid ja kas on probleeme;<br>
-  - ülesannete täiendamine ja lisamine. <br> 
+  - ülesannete täiendamine ja lisamine; <br> 
   - järgmine koosolek 30.04 kell 10:00 <br>
 - **[16.04.2023](/docs/Koosolekud.md#16042023) koosolek** <br>
   **Kestus: 10.00 - 11.00** <br>

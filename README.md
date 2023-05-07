@@ -41,7 +41,7 @@ Koosolekute lühiülevaade:
   **Kestus: 10.00 - 11.00** <br>
   - Nädala tegevused - mida grupi liikmed tegid ja kas on probleeme;<br>
   - ülesannete täiendamine ja lisamine; <br> 
-  - järgmine koosolek 14.07 kell 10:00 <br>
+  - järgmine koosolek 14.05 kell 10:00 <br>
 - **[30.04.2023](/docs/Koosolekud.md#16042023) koosolek** <br>
   **Kestus: 10.00 - 11.00** <br>
   - juhendajatelt saadud tagasiside ja sellest tulenevad tegevused;<br>

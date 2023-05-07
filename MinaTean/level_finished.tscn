@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
 [ext_resource type="Texture2D" uid="uid://c8fw40b0e5tgi" path="res://img/level_completed.png" id="4_8yq4e"]
-[ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="4_fluml"]
-[ext_resource type="Texture2D" uid="uid://cltv1hbwscg3b" path="res://img/sound_buttons/sound_on.png" id="5_5yixp"]
+[ext_resource type="Texture2D" uid="uid://bnxhv55ai4clq" path="res://img/sound_buttons/sound_on.png" id="5_5yixp"]
+[ext_resource type="Texture2D" uid="uid://dmcremb1wcjnl" path="res://img/sound_buttons/sound_off.png" id="6_bdsxq"]
 [ext_resource type="AudioStream" uid="uid://cgieb6fcpxq25" path="res://sound/level_finished.mp3" id="6_udxiw"]
-[ext_resource type="Texture2D" uid="uid://ck82qf1whke8v" path="res://img/sound_buttons/music_off.png" id="7_7wyoa"]
-[ext_resource type="Texture2D" uid="uid://lr80lir4sn83" path="res://img/sound_buttons/music_on.png" id="7_hhwc4"]
+[ext_resource type="Texture2D" uid="uid://g6ta31toil4y" path="res://img/sound_buttons/music_off.png" id="7_7wyoa"]
+[ext_resource type="Texture2D" uid="uid://bcocxu7ag6tds" path="res://img/sound_buttons/music_on.png" id="7_hhwc4"]
 [ext_resource type="Texture2D" uid="uid://ck75yr75f3g4m" path="res://img/exit.png" id="9_b2kqx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_af17a"]
@@ -194,7 +194,7 @@ grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gbsvj")
-icon = ExtResource("4_fluml")
+icon = ExtResource("6_bdsxq")
 
 [node name="Music_on" type="Button" parent="."]
 top_level = true

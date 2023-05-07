@@ -17,9 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cy7xkxxef1auc" path="res://img/door_sprite/0023.png" id="17_ctjmm"]
 [ext_resource type="Texture2D" uid="uid://c8p8dfyldooj5" path="res://img/door_sprite/0025.png" id="18_stvvp"]
 [ext_resource type="Texture2D" uid="uid://cbpscp260u21g" path="res://img/ghost_sprite/0000.png" id="19_8u0ss"]
-[ext_resource type="Texture2D" uid="uid://b7egwv6uk544l" path="res://img/sound_off.png" id="19_juorv"]
 [ext_resource type="Texture2D" uid="uid://b7ohdiwfwgyfe" path="res://img/door_sprite/0027.png" id="19_scrw8"]
-[ext_resource type="Texture2D" uid="uid://boefk5pefappt" path="res://img/sound_on.png" id="20_173yw"]
 [ext_resource type="Texture2D" uid="uid://pyewy61oh43s" path="res://img/ghost_sprite/0002.png" id="20_naa6g"]
 [ext_resource type="Texture2D" uid="uid://cg2ondtvdkj2g" path="res://img/door_sprite/0029.png" id="20_r34k4"]
 [ext_resource type="Texture2D" uid="uid://j67stv5h30yq" path="res://img/ghost_sprite/0004.png" id="21_57uvv"]
@@ -39,10 +37,12 @@
 [ext_resource type="Texture2D" uid="uid://cagqjnmvydx5p" path="res://img/ghost_sprite/0032.png" id="35_txuks"]
 [ext_resource type="Texture2D" uid="uid://gh0reav3co6u" path="res://img/ghost_sprite/0034.png" id="36_cgpqn"]
 [ext_resource type="Texture2D" uid="uid://ck75yr75f3g4m" path="res://img/exit.png" id="37_2n5sb"]
+[ext_resource type="Texture2D" uid="uid://dmcremb1wcjnl" path="res://img/sound_buttons/sound_off.png" id="38_j4gct"]
 [ext_resource type="AudioStream" uid="uid://wbddpdrncus1" path="res://sound/right_answer.mp3" id="39_gvetb"]
-[ext_resource type="Texture2D" uid="uid://ck82qf1whke8v" path="res://img/sound_buttons/music_off.png" id="39_jmtnj"]
+[ext_resource type="Texture2D" uid="uid://g6ta31toil4y" path="res://img/sound_buttons/music_off.png" id="39_jmtnj"]
+[ext_resource type="Texture2D" uid="uid://bnxhv55ai4clq" path="res://img/sound_buttons/sound_on.png" id="39_moa28"]
 [ext_resource type="AudioStream" uid="uid://dwe3r56hvdgkm" path="res://sound/onenote_higher.mp3" id="40_ekbvq"]
-[ext_resource type="Texture2D" uid="uid://lr80lir4sn83" path="res://img/sound_buttons/music_on.png" id="40_krhmm"]
+[ext_resource type="Texture2D" uid="uid://bcocxu7ag6tds" path="res://img/sound_buttons/music_on.png" id="40_krhmm"]
 
 [sub_resource type="Animation" id="Animation_bnfq3"]
 length = 0.001
@@ -436,7 +436,7 @@ grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_fabrv")
-icon = ExtResource("19_juorv")
+icon = ExtResource("38_j4gct")
 
 [node name="Sound_on" type="Button" parent="."]
 top_level = true
@@ -453,7 +453,7 @@ grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gx23d")
-icon = ExtResource("20_173yw")
+icon = ExtResource("39_moa28")
 
 [node name="Music_off" type="Button" parent="."]
 top_level = true

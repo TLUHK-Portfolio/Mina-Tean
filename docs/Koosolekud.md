@@ -8,6 +8,33 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 07.05.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+1. Siiri: esilehe uuendus, "under construction" ikoon; lõpuekraan (uued tekstid, mäng läbi tekst maha, välju mängust nupp uuele asukohale); 
+2. Mario: matemaatika õpiku tekst kahel real, koonu parendatud; uus väljumise nupp;
+3. Andrus: uute disainide lisamine mängu; vastuste bugi parandamine;
+4. Riina: funktsionaalsuste testimine; vea ülevaatamine Andrusega - taset korrates annab mäng valepositiivse/valenegatiivse tagasiside;uute ülesannete kirjeldused;
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Igaühel [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues) täidetud jooksvalt, tähtaeg 10.05.2023  kell 19:00.
+2. Järgmine koosolek 14.05.2023 kell 10:00.
+
+
 ## 30.04.2023
 
 ### Osalejad

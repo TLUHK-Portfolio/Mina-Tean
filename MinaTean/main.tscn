@@ -49,6 +49,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x4ctu")
 icon = ExtResource("3_f2aeq")
 metadata/_edit_lock_ = true
@@ -67,6 +68,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bxvgk")
 icon = ExtResource("4_6mpru")
 metadata/_edit_lock_ = true
@@ -85,6 +87,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x4ctu")
 icon = ExtResource("5_4tu3o")
 metadata/_edit_lock_ = true
@@ -103,6 +106,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bxvgk")
 icon = ExtResource("6_jv3wd")
 metadata/_edit_lock_ = true
@@ -120,6 +124,7 @@ offset_right = 1456.0
 offset_bottom = 1264.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("3_32go2")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxEmpty_maxy6")
@@ -141,6 +146,7 @@ offset_right = 2139.0
 offset_bottom = 1258.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mndou")
 disabled = true
 
@@ -160,6 +166,7 @@ offset_right = 2808.0
 offset_bottom = 1261.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_7jtli")
 
 [node name="Level3_icon" type="Sprite2D" parent="Levels/Level3"]
@@ -178,6 +185,7 @@ offset_right = 1459.0
 offset_bottom = 1860.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cgp76")
 
 [node name="Level4_icon" type="Sprite2D" parent="Levels/Level4"]
@@ -193,6 +201,7 @@ offset_left = 1710.0
 offset_top = 1434.0
 offset_right = 2138.0
 offset_bottom = 1857.0
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
 
 [node name="Level5_icon" type="Sprite2D" parent="Levels/Level5"]
@@ -208,6 +217,7 @@ offset_left = 2382.0
 offset_top = 1430.0
 offset_right = 2810.0
 offset_bottom = 1853.0
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_o2bsp")
 
 [node name="Level6_icon" type="Sprite2D" parent="Levels/Level6"]
@@ -228,6 +238,7 @@ offset_left = 3275.0
 offset_top = 199.0
 offset_right = 3655.0
 offset_bottom = 313.0
+mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gnatm")
 metadata/_edit_use_anchors_ = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dhy4oks86n0de"]
+[gd_scene load_steps=16 format=3 uid="uid://dhy4oks86n0de"]
 
 [ext_resource type="Script" path="res://level_finished.gd" id="1_l3p1g"]
 [ext_resource type="FontFile" uid="uid://crprl3g8een26" path="res://ttf/Nunito-SemiBold.ttf" id="2_hrjd1"]
@@ -9,8 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://g6ta31toil4y" path="res://img/sound_buttons/music_off.png" id="7_7wyoa"]
 [ext_resource type="Texture2D" uid="uid://bcocxu7ag6tds" path="res://img/sound_buttons/music_on.png" id="7_hhwc4"]
 [ext_resource type="Texture2D" uid="uid://ck75yr75f3g4m" path="res://img/exit.png" id="9_b2kqx"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_af17a"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yoxel"]
 
@@ -108,21 +106,13 @@ centered = false
 position = Vector2(400, 0)
 centered = false
 
-[node name="ToMainMenu" type="Button" parent="."]
-offset_left = 3363.0
-offset_top = 226.0
-offset_right = 3659.0
-offset_bottom = 348.0
-theme_override_fonts/font = ExtResource("2_hrjd1")
-theme_override_font_sizes/font_size = 64
-theme_override_styles/normal = SubResource("StyleBoxEmpty_af17a")
-
 [node name="ToNextLevel" type="Button" parent="."]
 visible = false
 offset_left = 1980.0
 offset_top = 1744.0
 offset_right = 2292.0
 offset_bottom = 2051.0
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yoxel")
 
 [node name="RepeatLevel" type="Button" parent="."]
@@ -130,6 +120,7 @@ offset_left = 1566.0
 offset_top = 1741.0
 offset_right = 1876.0
 offset_bottom = 2048.0
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_8wid8")
 
 [node name="Finished_sound" type="AudioStreamPlayer" parent="."]
@@ -176,6 +167,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_urxgt")
 icon = ExtResource("5_5yixp")
 
@@ -193,6 +185,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gbsvj")
 icon = ExtResource("6_bdsxq")
 
@@ -210,6 +203,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jij1o")
 icon = ExtResource("7_hhwc4")
 
@@ -227,6 +221,7 @@ offset_bottom = -128.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jij1o")
 icon = ExtResource("7_7wyoa")
 
@@ -240,11 +235,11 @@ offset_left = 3275.0
 offset_top = 199.0
 offset_right = 3655.0
 offset_bottom = 313.0
+mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bdbg3")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="ToMainMenu" to="." method="_on_to_main_menu_pressed"]
 [connection signal="pressed" from="ToNextLevel" to="." method="_on_to_next_level_pressed"]
 [connection signal="pressed" from="RepeatLevel" to="." method="_on_repeat_level_pressed"]
 [connection signal="pressed" from="Sound_on" to="." method="_on_sound_on_pressed"]

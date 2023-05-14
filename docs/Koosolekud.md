@@ -8,6 +8,37 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 14.05.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Juhendajatelt tagasiside
+- Juhendajatelt tuli tagasiside projekti jooksutamise kohta Linuxi masinas ja uuesti mainiti ära ämbliku kasutamine. 
+
+### Järgmise iteratsiooni plaan
+Vaatame üle ülesanded, mis on hetkel skoobis. Lisame ja kirjeldame vajadusel juhendajate ettepanekud ülesannetes.
+<br>
+Disain: uurida, kuidas kasutatakse ämblikke ja muid tõenäoliselt foobit tekitavaid elemente kasutajaliidestes;
+Arendus: uurida, mis põhjustab probleeme Linuxi masinas käivitamisega;
+Testimine: 1. ja 2. klassi laste peal mängu testimine;
+Testimine: funktsionaalsuste testimine, kas kõik töötab nii nagu vaja;
+Testimine: UI testimine, kas kõik elemendid on olemas ja asuvad nendel kohtadel, kuhu me neid soovisime;
+Disain/arendus: "credentials" leht - mängumootor, autorid (helid, disain, arendus);
+Disain/arendus: väljumise kinnitusaken;
+Disain: plakatiga alustamine;
+
+### Kokkulepped, otsused
+1. Järgmine koosolek 22.05 kell 19:00. <br> 
+
 ## 07.05.2023
 
 ### Osalejad

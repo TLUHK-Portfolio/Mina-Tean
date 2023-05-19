@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cdy1djfjbjlnq"]
+[gd_scene load_steps=55 format=3 uid="uid://cdy1djfjbjlnq"]
 
 [ext_resource type="Script" path="res://level1.gd" id="1_cshpo"]
 [ext_resource type="Texture2D" uid="uid://cbkus5rwq7abb" path="res://img/classroom/level1/math.png" id="2_jq24g"]
@@ -82,8 +82,6 @@ _data = {
 }
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd4kb"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_26cmn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qagh"]
 
@@ -274,7 +272,6 @@ offset_right = 1578.0
 offset_bottom = 1511.0
 mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_wd4kb")
-icon = SubResource("ViewportTexture_26cmn")
 clip_text = true
 metadata/_edit_lock_ = true
 

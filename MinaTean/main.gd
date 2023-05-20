@@ -21,7 +21,9 @@ func _ready():
 
 	for i in range(min(Global.game_results.levels_completed + 1, Global.NUM_OF_LEVELS)):
 		$Levels.get_child(i).set("visible", true)
+		$Levels.get_child(i).disabled = false
 		$Levels.get_child(i).get_child(0).set("visible", true)
+		
 
 	Questions.read_questions()
 	# get_node("Label").set("text", Questions.topic)

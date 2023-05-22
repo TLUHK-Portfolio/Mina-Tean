@@ -8,6 +8,32 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 22.05.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 19:00
+Lõpp: 20:00
+
+### Perioodi tagasivaade
+Mida tegin, kas oli probleeme?
+
+1. Siiri: dokumentatsiooniga alustamine; plakatiga töö alustamine (geograafia klassi pilti oleka vaja selle jaoks);
+2. Mario: Välju kinnitusakna tegemine Affinitys (seal oli vaja veidi meelde tuletada, kuidas programm töötab); tiitelleht mängule (tahvel mängu nimega, autoritega jms); UI testimine (kõik toimis, v.a 2.taseme nupp);
+3. Andrus: Välju kinnitusaken (läks sellega aega, kuna oli soov kasutada üle projekti sama koodi); Linuxi masinas käivitamise vea otsimisega alustamine (ühel objektil oli viewport, aga poleks midagi vaja olnud), aga pole testitud -  oli päris keerukas ja ajamahukas; godot debugi vigade parandamine; uue tiitellehe lisamine mängu;
+4. Riina: koolilaste peal mängu testimine (kolm testitavat, keeruline on lastelt saada sõnalist tagasisidet, üldiselt läks testimine hästi); funktsionaalsuste testimine (testimise käigus tuli välja üks viga 2.taseme nupuga, mille kohta sai tehtud ülesanne);
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Igaühel [praktikapäevik](https://github.com/tluhk/Multimeediumi_praktika/issues) täidetud jooksvalt, tähtaeg 23.05.2023  kell 19:00.
+2. Järgmine koosolek 28.05.2023 kell 9:45.
+
 ## 14.05.2023
 
 ### Osalejad

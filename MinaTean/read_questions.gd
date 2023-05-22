@@ -1,15 +1,27 @@
 extends Node
 
+#var path = "/path/to/some.mp3"
+#var snd_file=File.new()
+#snd_file.open(path, File.READ)
+#var stream = AudioStreamMP3.new()
+#stream.data = snd_file.get_buffer(snd_file.get_len())
+
+
 var topic = ""
 var levels
 var questions
 var questions_from_class = 4
+var file
 
 func read_questions():
-	if not FileAccess.file_exists("res://questions.json"):
-		return # Error! We don't have a save to load.
-
-	var file = FileAccess.open("res://questions.json", FileAccess.READ)
+	if FileAccess.file_exists("questions.json"):
+		file = FileAccess.open("questions.json", FileAccess.READ)
+	else:
+		if FileAccess.file_exists("res://questions.json"):
+			file = FileAccess.open("res://questions.json", FileAccess.READ)
+		else:
+			return # Error! We don't have a save to load.
+			
 	var data = file.get_as_text()
 
 	var json = JSON.new()

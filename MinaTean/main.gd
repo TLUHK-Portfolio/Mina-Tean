@@ -70,23 +70,35 @@ func add_exit_confirm(node):
 	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal/Exit").pressed.connect(exit)
 	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal/Cancel").pressed.connect(cancel)
 	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Dark").hide()
+	#get_node("/root/main/Exit_confirm/AnimationPlayer/Modal").hide()
 	#add_child.call_deferred(node_instance)
 	return
 
 func _on_exit_pressed():
 	disable_buttons()
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Dark").show()
 	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal").show()
 	get_node("/root/main/Exit_confirm/AnimationPlayer").play("zoom")
 	#exitNode.
 
 func exit():
-	get_node("/root/main/Exit_confirm/AnimationPlayer").play_backwards("zoom")
+	var animation = get_node("/root/main/Exit_confirm/AnimationPlayer")
+	animation.play_backwards("zoom")
+	await animation.animation_finished
 	get_node("/root/main/Exit_confirm/").visible = false
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Dark").hide()
+	
 	Transition.smooth_quit()
 	
 func cancel():
-	get_node("/root/main/Exit_confirm/AnimationPlayer").play_backwards("zoom")
+	var animation = get_node("/root/main/Exit_confirm/AnimationPlayer")
+	animation.play_backwards("zoom")
+	await animation.animation_finished
 	get_node("/root/main/Exit_confirm/").visible = false
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/main/Exit_confirm/AnimationPlayer/Dark").hide()
 	enable_buttons()
 #var myNode = preload("Drag and Drop type your path here")
 #func add_myNode _to_my_game(): 

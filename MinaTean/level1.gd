@@ -101,12 +101,6 @@ func fill_answer_fields():
 	var texture = load("res://img/classroom/level" + str(Global.level) + "/" + Questions.current().classroom + ".png")
 	$AnimationPlayer/AnimatedScene/Background.texture = texture
 
-
-func _on_main_menu_pressed():
-	disable_buttons()
-	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal").show()
-	get_node("/root/Level1/Exit_confirm/AnimationPlayer").play("zoom")
-
 func play_ghost_animation():
 	disable_buttons()
 	if $Sound_on.visible == true:
@@ -169,15 +163,30 @@ func add_exit_confirm(node):
 	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal/Exit").pressed.connect(exit)
 	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal/Cancel").pressed.connect(cancel)
 	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Dark").hide()
 	return
 
+func _on_main_menu_pressed():
+	disable_buttons()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal").show()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Dark").show()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer").play("zoom")
+
 func exit():
-	get_node("/root/Level1/Exit_confirm/AnimationPlayer").play_backwards("zoom")
+	var animation = get_node("/root/Level1/Exit_confirm/AnimationPlayer")
+	animation.play_backwards("zoom")
+	await animation.animation_finished
 	get_node("/root/Level1/Exit_confirm/").visible = false
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Dark").hide()
 	Global.question = 0
 	Transition.change_scene("res://main.tscn")
 	
 func cancel():
-	get_node("/root/Level1/Exit_confirm/AnimationPlayer").play_backwards("zoom")
+	var animation = get_node("/root/Level1/Exit_confirm/AnimationPlayer")
+	animation.play_backwards("zoom")
+	await animation.animation_finished
 	get_node("/root/Level1/Exit_confirm/").visible = false
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Modal").hide()
+	get_node("/root/Level1/Exit_confirm/AnimationPlayer/Dark").hide()
 	enable_buttons()

@@ -8,6 +8,30 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 28.05.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 9:45
+Lõpp: 10:45
+
+### Retro koosolek
+
+[LINK](https://easyretro.io/publicboard/pNu1utslY1dmgMe3am046o0Dft62/b6289add-8907-4b66-8f01-d2bdac239cf1)
+
+
+### Kokkulepped, otsused, tegevused edasiseks
+1. Siiri saadab Laurale esialgse variandi.
+2. Teeme korrektuurid mängus: kinnitusaknale selgem küsimuse sõnastus; diplomil smiled joondatud keskele ja suurem vahe karikatega.
+3. Järgmisel koosolekul otsustame, kas jõuame teha ka mängu tutvustava video klipi.
+4. Järgmine koosolek 04.06.2023 kell 10:00.
+
 ## 22.05.2023
 
 ### Osalejad

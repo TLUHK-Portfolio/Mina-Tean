@@ -8,6 +8,41 @@ Juhendajad:
   <li>Taavi Larionov</li>
 </ul>
 
+## 04.06.2023
+
+### Osalejad
+<ul>
+  <li>Riina Muld</li>
+  <li>Siiri Inno</li>
+  <li>Andrus Küünarpu</li>
+  <li>Mario Murd</li>
+</ul>
+
+Algus: 10:00
+Lõpp: 11:00
+
+### Nädala jooksul tehtud asjad
+1. Siiri: mängu plakat;
+2. Mario: muudatus kinnitusaknale; aruanne;
+3. Andrus: kinnitusakne uus versioon koodi; aruanne; smilede joondus;
+4. Riina: aruanne (peatükid - sissejuhatus, kontseptsioon, meeskonnatöö ülevaade, kasutajaliidese disain, kokkuvõte); meeskonnajuhi hinnang.
+
+### Kokkulepped, otsused
+1. Kaitsmine 09.06 kell 10:00. <br>
+2. Aruanne peab olema täielikult valmis 06.06 õhtuks, saatmise tähtaeg 07.06.2023 kell 10:00. <br>
+3. Aruandest puudu või lühike: 
+    <ul>
+      <li>meeskonnaliikmete eneseanalüüs;</li>
+      <li>graafika;</li>
+      <li>kasutajaliides;</li>
+      <li>heli;</li>
+      <li>kasutatud kirjanuds.</li>
+    </ul>
+4. Siiri testib - Readme abil mängu käivitamine, tähtaeg 07.06.2023
+5. Mario - mängu tutvustav videoklipp, tähtaeg 07.06.2023
+6. Riina - esitlus, tähtaeg 08.06.2023
+7. KÕIK - aruandes enda osa lõpetada, tähtaeg 05.06.2023
+
 ## 28.05.2023
 
 ### Osalejad

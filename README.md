@@ -20,7 +20,7 @@ Mängu **Mina tean!** käigus peab mängija liikuma klassiruumides ning edasi p�
 tuleb mängijal lahendada ülesandeid. Mängija valib tahvlilt vastuse kolme 
 vastusevariandi seast. Õige vastuse korral avaneb uks ja mängija saab edasi liikuda
 järgmise ülesande juurde, vale vastuse korral saab mängija uuesti vastata niikaua, kui saab
-õige vastuse. Iga ülesande eest saab karika vastavalt vastavalt sellele, mitmendal
+õige vastuse. Iga ülesande eest saab karika vastavalt sellele, mitmendal
 korral õigesti vastas. Mängu tulemusest sõltub, kas ta saab järgmisele tasemele. 
 
 ## Kasutatavad tehnoloogiad
